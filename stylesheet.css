@@ -1,0 +1,2165 @@
+#modmail {
+    color: transparent;
+}
+
+.drop-choices {
+    z-index: 475;
+}
+
+.drop-choices a.choice {
+    color: #333;
+    padding: 5px;
+}
+
+.marknsfw-button {
+    position: relative;
+}
+
+.marknsfw-button:after {
+    margin-left: 5px;
+    content: "NSFW content will not be tolerated";
+    color: red;
+    position: absolute;
+    top: -15px;
+    left: -5px;
+    opacity: 0;
+    display: none;
+    transition: all ease .2s;
+}
+
+.marknsfw-button:hover:after {
+    display: block;
+    opacity: 1;
+}
+
+.author.moderator {
+    padding: 2px 25px 2px 2px !important;
+    border-radius: 2px;
+    position: relative;
+    transition: all .2s ease;
+}
+
+.thing .tagline .author.moderator ~ .stickied-tagline {
+    position: static;
+}
+
+.author.moderator:hover {
+    padding: 2px 275px 2px 2px!important;
+}
+
+.author.moderator ~ .userattrs {
+    display: none;
+}
+
+.author.moderator:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    padding: 2px 5px;
+    color: red !important;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    background-image: url(%%red-logof%%);
+    background-size: auto 90%;
+    background-repeat: no-repeat;
+    background-position: 99% center;
+}
+
+.author.moderator:after {
+    content: "Moderator of /r/AtlasReactor, speaking officially";
+    opacity: 0;
+    position: absolute;
+    padding: 3px 10px 2px 0;
+    color: red;
+    right: 20px;
+    bottom: 0;
+    top: 0;
+    font-weight: normal;
+    font-style: italic;
+    font-family: Arial, sans-serif;
+    transition: all .2s ease;
+    font-size: 11px;
+}
+
+.author.moderator:hover:after {
+    opacity: 1;
+}
+
+.author.moderator[href*="Maltroth"]:before { content: "Maltroth"; }
+.author.moderator[href*="Kiwidream"]:before { content: "Kiwidream"; }
+.author.moderator[href*="Trymantha"]:before { content: "Trymantha"; }
+
+.moderator ~ .flair {
+    display: none;
+}
+
+.thumbnail {
+    width: 55px;
+    height: 62px;
+    margin-right: 10px;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.thumbnail.default,
+.thumbnail.nsfw,
+.thumbnail.self {
+    background: url(%%white-logol%%);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 5px;
+    width: 55px;
+    height: 43px;
+}
+
+.linklisting .thing .title > .linkflairlabel {
+    position: absolute !important;
+    right: 20px;
+    bottom: 10px;
+    padding: 15px;
+    padding: 5px 0;
+    background: transparent;
+    border: 0;
+    font-size: 12px;
+    line-height: 13px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    white-space: normal;
+    text-transform: uppercase;
+    font-family: Arial;
+}
+
+.entry .buttons li a,
+.thing .title {
+    color: #666;
+    font-weight: normal;
+}
+
+.thing .title { color: #333; opacity: 1; }
+.thing .title:visited { color: #888; }
+
+/* Author Flairs */
+
+.comment .entry {
+    position: relative;
+    padding-left: 70px;
+    margin-left: 40px;
+    overflow: visible;
+}
+
+.comment .flat-list,
+.comment .usertext {
+    margin-left: -20px;
+}
+
+.usertext.cloneable {
+    margin-left: 0;
+}
+
+.comment .usertext {
+    min-height: 55px;
+    padding-top: 5px;
+}
+
+.comment .expand {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+}
+
+.comment .author {
+    position: absolute;
+    top: 3px;
+    left: 15px;
+}
+
+.comment .tagline .RESUserTag {
+    position: absolute;
+    top: 80px;
+    left: 5px;
+}
+
+.comment .RESUserTag a:not(.hasTag) {
+    margin-left: 11px;
+}
+
+.comment a.voteWeight {
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+
+.comment .userattrs {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.tagline .stickied-tagline, .search-result-meta .stickied-tagline {
+    position: absolute;
+    top: 20px;
+    right: 28px;
+}
+
+.flair {
+    border: 0;
+    background: url(%%sprite-flairs%%) no-repeat -52px -3px;
+    width: 38px;
+    height: 30px;
+    position: relative;
+    color: transparent;
+    white-space: nowrap;
+}
+
+.flair:after {
+    content: attr(title);
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 28px;
+    height: 20px;
+    background: #2c2c2c;
+    box-shadow: inset -1px 0 1px #000;
+    color: #ddd;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-style: italic;
+    width: 0;
+    opacity: 0;
+    transition: all ease .2s;
+    white-space: nowrap;
+}
+
+.sidecontentbox .flair:after,
+.link .flair:after {
+    display: none;
+}
+
+.sidecontentbox .flair a,
+.link .flair a {
+    background: transparent;
+    box-shadow: none;
+    color: #666 !important;
+    height: 15px;
+    width: auto;
+    opacity: 1;
+    padding: 2px 0 0 45px;
+    font-size: 11px;
+}
+
+.flairselector.drop-choices.active {
+    padding: 20px !important;
+    border: 0;
+    box-shadow: 1px 1px 5px #333;
+}
+
+.flairselector .customizer {
+    width: 100%;
+}
+
+.flairselector .customizer input {
+    width: 80%;
+}
+
+.flairselector form {
+    padding: 20px 0;
+    margin-top: 20px;
+    position: relative;
+}
+
+.flairselector form:after {
+    content: "Flairs have link restrictions, only Youtube and Twitch can be set for now.";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    font-style: italic;
+    color: #333;
+    font-weight: 400;
+    font-family: Arial;
+}
+
+.flairselector form button {
+    margin-left: -60px;
+}
+
+.flairselector .flair:after,
+.flair:hover:after {
+    width: auto;
+    opacity: 1;
+}
+
+.sidecontentbox .flair,
+.link .flair {
+    bottom: -10px;
+    margin-top: -10px;
+    overflow: visible;
+    margin: 0;
+    height: 15px;
+    bottom: inherit;
+    top: 4px;
+    background: url(%%sprite-flairs%%) no-repeat -52px -8px;
+    color: #666;
+    font-weight: 400;
+    font-size: 11px;
+    font-family: Arial;
+    font-style: italic;
+}
+
+.sidecontentbox .flair:before,
+.link .flair:before {
+    margin-top: 1px;
+    height: 12px;
+}
+
+.flairselector .flair {
+    overflow: visible;
+}
+
+.flairselector form>div {
+    text-align: left;
+}
+
+.flairselector .flair a {
+    color: transparent !important;
+}
+
+.flairselector li.selected {
+    border: 0;
+}
+
+.flairselector li.selected .flair {
+    background: url(%%sprite-flairs%%) no-repeat -53px -71px;
+}
+
+.side .tagline > .flair {
+    z-index: 450;
+    width: 38px !important;
+    overflow: hidden;
+}
+
+.side .tagline > .flair,
+.comment .flair {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    height: 30px;
+    border: 0;
+    background: url(%%sprite-flairs%%) no-repeat -52px -3px;
+    width: 38px;
+    color: transparent;
+}
+
+.comment .flair:hover {
+    background: url(%%sprite-flairs%%) no-repeat -52px -38px;
+}
+
+.flair a {
+    color: transparent !important;
+    width: 30px;
+    height: 30px;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 600;
+    font-size: 12px;
+    padding-left: 38px;
+}
+
+.flair:hover a {
+    width: auto;
+}
+
+.comment span.score,
+.comment .entry time {
+    position: absolute;
+    left: -40px;
+    width: 70px;
+    text-align: right;
+}
+
+.comment .tagline span.score { top: 29px; }
+.comment .tagline time { top: 40px; }
+.comment .tagline .flair ~ span.score { top: 55px; }
+.comment .tagline .flair ~ time { top: 68px; }
+.comment .tagline .moderator ~ span.score { top: 29px; }
+.comment .tagline .moderator ~ time { top: 40px; }
+
+.comment .entry time.edited-timestamp {
+    top: inherit;
+    left: inherit;
+    right: 0;
+    bottom: 0;
+    width: auto;
+}
+
+.comment.collapsed .numchildren {
+    position: absolute;
+    top: 0;
+    right: 50px;
+}
+
+.side .tagline > .flair {
+    top: 218px;
+    right: 5%;
+    left: inherit;
+}
+
+.side .tagline,
+.side .tagline .author {
+    color: transparent;
+    height: 0;
+}
+
+.side .tagline > a.flairselectbtn {
+    position: absolute;
+    width: 38px;
+    height: 30px;
+    top: 218px;
+    right: 5.5%;
+    z-index: 500;
+    color: white;
+    line-height: 10px;
+    padding: 2px 0 0 2px;
+}
+
+.side .tagline > a.flairselectbtn:after {
+    content: " flair";
+}
+
+.side .tagline > .flair + a.flairselectbtn {
+    color: transparent;
+}
+
+.flair:before {
+    content: " ";
+    width: 38px;
+    height: 30px;
+    display: inline-block;
+}
+
+.flairselector .author {
+    display: none;
+}
+
+.flair-dummy-big:before { background: url(%%sprite-flairs%%) no-repeat -183px -6px; }
+.flair-dummy-fast:before { background: url(%%sprite-flairs%%) no-repeat -222px -6px; }
+.flair-dummy-small:before { background: url(%%sprite-flairs%%) no-repeat -261px -6px; }
+.flair-asana:before { background: url(%%sprite-flairs%%) no-repeat -104px -5px; }
+.flair-aurora:before { background: url(%%sprite-flairs%%) no-repeat -141px -5px; }
+.flair-elle:before { background: url(%%sprite-flairs%%) no-repeat -295px -6px; }
+.flair-garrison:before { background: url(%%sprite-flairs%%) no-repeat -339px -5px; }
+.flair-gremolitions:before { background: url(%%sprite-flairs%%) no-repeat -379px -6px; }
+.flair-grey:before { background: url(%%sprite-flairs%%) no-repeat -100px -39px; }
+.flair-helio:before { background: url(%%sprite-flairs%%) no-repeat -140px -39px; }
+.flair-lockwood:before { background: url(%%sprite-flairs%%) no-repeat -180px -41px; }
+.flair-nix:before { background: url(%%sprite-flairs%%) no-repeat -218px -40px; }
+.flair-oz:before { background: url(%%sprite-flairs%%) no-repeat -258px -41px; }
+.flair-pup:before { background: url(%%sprite-flairs%%) no-repeat -297px -41px; }
+.flair-quark:before { background: url(%%sprite-flairs%%) no-repeat -337px -39px; }
+.flair-rampart:before { background: url(%%sprite-flairs%%) no-repeat -374px -40px; }
+.flair-rask:before { background: url(%%sprite-flairs%%) no-repeat -100px -71px; }
+.flair-titus:before { background: url(%%sprite-flairs%%) no-repeat -142px -72px; }
+.flair-zuki:before { background: url(%%sprite-flairs%%) no-repeat -177px -71px; }
+
+.sidecontentbox .flair-dummy-big:before,
+.link .flair-dummy-big:before { background: url(%%sprite-flairs%%) no-repeat -183px -11px; }
+
+.sidecontentbox .flair-dummy-fast:before,
+.link .flair-dummy-fast:before { background: url(%%sprite-flairs%%) no-repeat -222px -11px; }
+
+.sidecontentbox .flair-dummy-small:before,
+.link .flair-dummy-small:before { background: url(%%sprite-flairs%%) no-repeat -261px -11px; }
+
+.sidecontentbox .flair-asana:before,
+.link .flair-asana:before { background: url(%%sprite-flairs%%) no-repeat -104px -10px; }
+
+.sidecontentbox .flair-aurora:before,
+.link .flair-aurora:before { background: url(%%sprite-flairs%%) no-repeat -141px -10px; }
+
+.sidecontentbox .flair-elle:before,
+.link .flair-elle:before { background: url(%%sprite-flairs%%) no-repeat -295px -11px; }
+
+.sidecontentbox .flair-garrison:before,
+.link .flair-garrison:before { background: url(%%sprite-flairs%%) no-repeat -339px -10px; }
+
+.sidecontentbox .flair-gremolitions:before,
+.link .flair-gremolitions:before { background: url(%%sprite-flairs%%) no-repeat -379px -11px; }
+
+.sidecontentbox .flair-grey:before,
+.link .flair-grey:before { background: url(%%sprite-flairs%%) no-repeat -100px -44px; }
+
+.sidecontentbox .flair-helio:before,
+.link .flair-helio:before { background: url(%%sprite-flairs%%) no-repeat -140px -44px; }
+
+.sidecontentbox .flair-lockwood:before,
+.link .flair-lockwood:before { background: url(%%sprite-flairs%%) no-repeat -180px -46px; }
+
+.sidecontentbox .flair-nix:before,
+.link .flair-nix:before { background: url(%%sprite-flairs%%) no-repeat -218px -45px; }
+
+.sidecontentbox .flair-oz:before,
+.link .flair-oz:before { background: url(%%sprite-flairs%%) no-repeat -258px -46px; }
+
+.sidecontentbox .flair-pup:before,
+.link .flair-pup:before { background: url(%%sprite-flairs%%) no-repeat -297px -46px; }
+
+.sidecontentbox .flair-quark:before,
+.link .flair-quark:before { background: url(%%sprite-flairs%%) no-repeat -337px -44px; }
+
+.sidecontentbox .flair-rampart:before,
+.link .flair-rampart:before { background: url(%%sprite-flairs%%) no-repeat -374px -45px; }
+
+.sidecontentbox .flair-rask:before,
+.link .flair-rask:before { background: url(%%sprite-flairs%%) no-repeat -100px -76px; }
+
+.sidecontentbox .flair-titus:before,
+.link .flair-titus:before { background: url(%%sprite-flairs%%) no-repeat -142px -77px; }
+
+.sidecontentbox .flair-zuki:before ,
+.link .flair-zuki:before { background: url(%%sprite-flairs%%) no-repeat -177px -76px; }
+
+.flair-trion-worlds {
+    background: url(%%sprite-1%%) no-repeat -359px 0 !important;
+    border: 0;
+    padding-top: 2px;
+    font-size: 0px;
+    color: transparent !important;
+    width: auto;
+}
+
+.link .flair-trion-worlds {
+    position: relative;
+    top: 0px !important;
+}
+
+.comment .flair-trion-worlds {
+    width: 62px !important;
+    height: 20px !important;
+    left: -15px !important;
+}
+
+.flair-trion-worlds:before,
+.flair-trion-worlds:after {
+    display: none;
+}
+
+/* RES Styling */
+.res .RES-keyNav-activeElement,
+.res .commentarea .RES-keyNav-activeElement .md,
+.res .RES-keyNav-activeElement .md-container, 
+.res .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
+    background: transparent !important;
+}
+
+.flairtoggle {
+    /*display: none;*/
+}
+
+.RESHover {
+    margin-top:35px;
+}
+
+.res .RES-keyNav-activeElement {
+    border-right: 3px solid #ccc;
+}
+
+.thing.stickied {
+    box-shadow: 0 0 0 2px #99CC99, 0px 1px 3px rgba(0,0,0,.2) !important;
+}
+
+#RESAccountSwitcherIcon {
+    margin-top: -7px;
+}
+
+.res [data-res-css] {
+    text-align: center;
+}
+.res [data-res-css]:before {
+    top: 100px !important;
+}
+
+.leavemoderator {
+    margin-top: 20px;
+    display: block;
+    min-height: 30px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.leavemoderator a {
+    color: #000;
+}
+
+.titlebox .leavemoderator:before, .moderator.toggle .main:before {
+    background-image: url(%%ar-reddit%%);
+    background-position: center center;
+    background-size: 110%;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 5px;
+    box-shadow: 1px 1px 2px #666;
+    margin-right: 10px;
+}
+
+.titlebox form.flairtoggle {
+    position: absolute;
+    margin-top: 10px;
+}
+
+.titlebox form.flairtoggle label {
+    width: 155px;
+    display: inline-block;
+    height: 14px;
+    overflow: hidden;
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 11px;
+}
+
+#searchexpando, #moresearchinfo {
+    white-space: normal;
+    position: absolute;
+    z-index: 800;
+    width: 280px;
+    border: 0;
+    background-color: #6d6f81;
+    box-shadow: inset 0 0 15px #333,inset 0 0 2px #fff;
+    color: #fff;
+    font-weight: normal;
+}
+
+#searchexpando select {
+    margin: 5px 10px;
+}
+
+html {
+    position: relative;
+    background-position: center top;
+    background-image: url(%%bg1%%);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: #223356;
+    background-attachment: fixed;
+}
+
+#header-img {
+    display: none;
+}
+
+#header-img.default-header,
+#header-img-a {
+    background: url(%%sprite-1%%) no-repeat -212px 0 !important;
+    width: 35px !important;
+    height: 41px !important;
+    position: absolute;
+    top: 213px;
+    left: 5.2%;
+    z-index: 500;
+}
+
+.side a[href*="discord.gg"] {
+    background: url(%%sprite-1%%) no-repeat -245px 0 !important;
+    width: 35px !important;
+    height: 41px !important;
+    position: absolute;
+    top: 215px;
+    left: 7.5%;
+    z-index: 500;
+}
+
+.side a[href*="discord.gg"]:after {
+    content: "DISCORD";
+    display: block;
+    width: 100px;
+    position: relative;
+    left: 35px;
+    top: -5px;
+    color: #fff;
+    font-size: 10px;
+    font-family: Arial;
+}
+
+#header-bottom-right {
+    top: 220px !important;
+    right: 5.5%;
+    text-align: right;
+    margin-right: 45px;
+}
+#header-bottom-right.res-userbar-toggle {
+    top: 208px !important;
+}
+
+#header-bottom-right > .user {
+    color: #eee;
+}
+
+#header-bottom-right > .user > a {
+    margin-right: -1px !important;
+    font-size: 20px;
+    display: block;
+    text-align: right;
+    margin-top: -5px;
+    margin-bottom: 5px;
+    font-family: Arial;
+    font-weight: 400;
+}
+
+a[href*="#btn"]:hover,
+.submit-text:hover .morelink:before,
+.submit-link:hover .morelink:before,
+.side h2 a:hover,
+#header .tabmenu li.selected a, #header .tabmenu li a:hover,
+#header-bottom-right a:hover,
+#header-bottom-right > .user > a:hover {
+    color: #fff;
+    text-shadow: 0 0 25px #fff;
+    transition: text-shadow ease .2s;
+}
+
+#header-bottom-right > .user > a[href="https://www.reddit.com/login"] {
+    display: inline-block;
+    font-size: 12px;
+    margin-top: -15px;
+}
+
+.res #header-bottom-right > .user > a[href="https://www.reddit.com/login"] {
+    margin-top: 15px;
+}
+
+#userbarToggle {
+    display: none !important;
+}
+#header-bottom-right .beta-hint {
+    top: 15px;
+    margin-left: 0px;
+}
+
+#header-bottom-right.res-userbar-toggle .beta-hint { 
+    top: 30px;
+    margin-left: 20px;
+}
+
+#sr-header-area {
+    background-color: transparent;
+    background-color: rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-left: 1px solid rgba(255,255,255,0.2);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    padding: 10px;
+    box-shadow: inset 0 0 40px rgba(255,255,255,0.2);
+    opacity: 0; 
+    transition: all .2s ease;
+}
+
+#sr-header-area:hover {
+    opacity: 1;
+}
+
+#sr-header-area .sr-list {
+    margin-right: 48px
+}
+#sr-header-area .dropdown.srdrop .selected, #sr-header-area .separator, #sr-header-area .sr-bar a, #sr-more-link, #header-bottom-right {
+    color: #fff;
+    background-color: transparent;
+    font-weight: bold
+    transition: all .15s ease;
+}
+
+#sr-more-link {
+    color: #8c9ab5;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 5px 0 15px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#sr-header-area .sr-list a {
+    color: #fff;
+}
+
+#header {
+    height: 265px;
+    background: url(%%banner-transparent%%) no-repeat;
+    background-position: center top;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: black;
+    font-family: Segoe UI,Helvetica Neue,Helvetica,Arial,sans-serif;
+    border-bottom: 32px; 
+    border-top: 32px;
+}
+
+
+#header .tabmenu {
+    display: block;
+    position: absolute;
+    top: 205px;
+    left: 0;
+    right: 0;
+    padding: 12px;
+    color: #7BB850;
+    font-family: Segoe UI,Helvetica Neue,Helvetica,Arial,sans-serif;
+    background-color: rgba(255,255,255,0.1);
+    background-image: url(%%menu-background%%);
+    background-position: center;
+    border-top: 1px solid rgba(255, 255,255,0.1);
+    border-bottom: 1px solid rgba(255, 255,255,0.1);
+    padding-left: 14.5%;
+    box-shadow: inset 0 0 40px rgba(255,255,255,0.2);
+}
+
+#header .tabmenu li a {
+    margin: 0 10px;
+    padding: 2px 0 4px;
+    background-color: transparent;
+    border: 0 solid;
+    color:#fff;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 16px;
+    opacity: 0.85;
+    transition: all .2s ease;
+    text-shadow: 1px 1px 5px #000;
+}
+
+#header .tabmenu li.selected a,
+#header .tabmenu li a:hover {
+    opacity: 1;
+    color: #fff;
+}
+
+#header .tabmenu li:nth-of-type(3),
+#header .tabmenu li:nth-of-type(4),
+#header .tabmenu li:nth-of-type(6),
+#header .tabmenu li:nth-of-type(8),  
+#header .tabmenu li:nth-of-type(9) { display:none; visibility:hidden; }
+
+.titlebox .word { display: none }
+
+.subButtons {
+    position: relative;
+}
+
+.subscribe-button {
+    border-radius: 3px;
+    position: relative;
+    left: 75px;
+    top: 3px;
+}
+
+.flairselector form button,
+.subscribe-button .add {
+    color: #999 !important;
+    border: 3px solid #999 !important;
+    border-radius: 3px !important;
+    padding: 2px 10px;
+    background: #fff;
+}
+
+.flairselector .flairremove a,
+.subscribe-button .remove {
+    color: #999 !important;
+    border: 1px solid #999 !important;
+    border-radius: 5px !important;
+    padding: 2px 10px;
+}
+
+.flairselector .flairremove a {
+    position: relative;
+    top: -10px;
+    right: -223px;
+}
+
+.res .subscribe-button {
+    position: absolute;
+    top: -25px;
+    right: -15px;
+    left: inherit;
+}
+
+.subscribe-button a {
+    color: #333 !important;
+}
+
+.titlebox .subscribers {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+}
+
+.res .titlebox .subscribers {
+    margin-top: 0;
+}
+
+.titlebox .subscribers .number {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.titlebox .subscribers .number:after { 
+    content: " already addicted"; 
+}
+
+.users-online {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+}
+.users-online:before { background-image: inherit; height: 0; width: 0; } 
+.titlebox .users-online span.number{ font-size: 10px; }
+.titlebox .users-online span.number:after { content: " will be soon"; }
+
+
+/*Optional- adds a caption under that image*/
+.edited-timestamp[title]:after {
+    content: " (" attr(title) ")";
+    font-family: Segoe UI,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 90%;
+}
+
+.titlebox Welcome to /r/.redditname a {
+    background-position: center;
+    vertical-align: bottom;
+    width: 300px;
+    color:#92CD00 ;
+    font-family: "Raleway Black", Gadget, sans-serif;
+    font-weight:
+    background-repeat:no-repeat;
+}
+
+body {
+    color: #0C122F;
+    font-family: Segoe UI,Helvetica Neue,Helvetica,Arial,sans-serif;
+    background-color: rgba(255, 255, 255, 0);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 13px 8px rgba(255,255,255,0);
+}
+
+.pagename a {
+    display: block;
+    visibility: visible!important;
+    position: absolute;
+    top: 30px;
+    left: 25%;
+    z-index: 100;
+    margin-left: -91.5px;
+    width: 1000px;
+    height: 155px;
+    background-image: ;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-indent: -9999px;
+}
+
+.tabmenu li a {
+    transition: color ease .2s;
+}
+
+.tabmenu li a {
+    padding: 2px 6px 0 6px;
+    background-color: #eff7ff;
+    color: #223356;
+    font-family: Tahoma,Calibri,Verdana,Geneva,arial,helvetica,clean,sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.85;
+    transition: all .2s ease;
+}
+
+.content a {
+    color: #0079d3;
+}
+
+.sidecontentbox a,
+#srList a {
+    text-decoration: none;
+    color: #000;
+}
+
+.sidecontentbox a:hover {
+    text-decoration: none;
+    color: #a6e4a5;
+}
+
+a:hover {
+    text-decoration: none !important;
+    opacity: 1;
+}
+user agent stylesheeta:-webkit-any-link {
+    color: -webkit-link;
+    text-decoration: underline;
+    cursor: auto;
+}
+.side {
+    float: right;
+    margin: -57px 0 250px 0;
+    padding: 0 10px 0 10px;
+    width: 300px;
+    background-color: transparent;
+    text-align: left;
+    color: #aaa;
+    font-weight: bold;
+    font-family: Segoe UI,Helvetica Neue,Helvetica,Arial,sans-serif ;
+}
+
+.side .spacer:nth-child(2) {
+    margin-bottom: 0;
+}
+
+.side .spacer:nth-child(3) {
+    margin-top: 20px;
+}
+
+.titlebox .bottom {
+    display: none;
+}
+
+.side h1,
+.side h2,
+.sidecontentbox .title h1 {
+    text-transform: uppercase;
+    display: block;
+    font-size: 16px !important;
+    margin-left: -20px;
+    margin-right: -21px;
+    padding: 10px 10px;
+    box-shadow: inset 0 0 15px #333, inset 0 0 2px #fff;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 0 2px 1px rgba(0,0,0,0.7);
+    background-color: #6d6f81;
+}
+
+.side h1 {
+    padding: 10px 10px 3px 10px;
+}
+
+.content.submit .info-notice,
+.roundfield {
+    background-color: #6d6f81;
+    box-shadow: inset 0 0 15px #333, inset 0 0 2px #fff;
+    color: #fff;
+    font-weight: 400;
+    border: 0;
+}
+
+.roundfield a,
+.roundfield .gray {
+    color: #ccc;
+}
+
+.roundfield .md,
+.submit_text h1 {
+    color: #fff;
+}
+
+.side h1 a {
+   color: transparent !important;
+   text-shadow: none !important;
+   background: url(%%sprite-1%%) no-repeat -172px -273px;
+   width: 249px;
+   height: 46px;
+   display: block;
+}
+
+.side h2 a {
+   color: #fff;
+   opacity: 1;
+   text-shadow: 0 2px 1px rgba(0,0,0,0.7);
+   transition: all .2s ease;
+}
+
+.side h2 a:after {
+    float: right;
+    content: "❱";
+    font-size: 22px;
+}
+
+.side h1 a {
+   color: #fff;
+   text-shadow: 0 2px 1px rgba(0,0,0,0.7);
+}
+
+.side .spacer:nth-child(3),
+.side .spacer:nth-child(4),
+.side .spacer:nth-child(5) {
+    display: inline-block;
+    max-width: 100%;
+}
+
+a[href*="#btn"],
+.side .spacer .sidebox.submit {
+    display: inline-block;
+    background: url(%%sprite-1%%) no-repeat 0 -115px;
+    width: 150px;
+    height: 42px;
+}
+
+.side .titlebox ul:first-of-type:not([style="width: 150px; float: left;"]) {
+    list-style: none;
+    background-color: #333;
+    position: absolute;
+    top: 260px;
+    left: 4.7%;
+    width: 71.5%;
+    padding: 0 20px 12px 20px;
+    box-shadow: inset 0 0 15px #222;
+    border-radius: 5px;
+    max-height: 30px;
+    overflow: hidden;
+}
+
+.side .titlebox ul:first-of-type:not([style="width: 150px; float: left;"]) {
+    width: calc(90.15% - 360px);
+}
+
+.side .titlebox ul:first-of-type:not([style="width: 150px; float: left;"]) li {
+    display: inline-block;
+    font-size: 15px;
+    padding: 0 25px;
+    margin-top: 12px;
+    border-left: 2px solid #a6e4a5;
+    font-family: Arial, sans-serif;
+}
+
+.side .titlebox ul:first-of-type:not([style="width: 150px; float: left;"]) li:first-child {
+    color: #a6e4a5;
+    padding-left: 0;
+    border-left: 0;
+    text-shadow: 0 2px 1px rgba(0,0,0,0.7);
+}
+
+.side .titlebox ul:first-of-type:not([style="width: 150px; float: left;"]) li a {
+    color: #eee;
+    text-shadow: 0 2px 1px rgba(0,0,0,0.7);
+}
+
+.res-sr-style-toggle,
+.res-fancy-toggle-button,
+.res-fancy-toggle-button.add,
+.res-fancy-toggle-button.remove,
+.fancy-toggle-button .add,
+.fancy-toggle-button .remove {
+    background-image: inherit;
+    border: 0;
+    width: auto;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: transparent;
+}
+
+.res-fancy-toggle-button,
+.res-fancy-toggle-button.add,
+.res-fancy-toggle-button.remove {
+    color: #000;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.titlebox form.toggle.res-sr-style-toggle {
+    font-size: 12px;
+}
+
+.sidecontentbox a.helplink {
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+    font-size: 16px;
+    line-height: 14px;
+    max-width: 100px;
+    margin-right: -15px;
+    font-weight: normal;
+}
+
+/*-------------------------------
+ New to Atlas Reactor sidebar button
+-------------------------------*/
+.sitetable {
+    clear: left;
+}
+
+.side .spacer {
+    margin: 0;
+}
+
+.sidecontentbox,
+.side .spacer .titlebox {
+    background-color: white;
+    padding: 0 20px 20px 20px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,.2);
+}
+
+.sidecontentbox {
+    padding: 0 10px 20px 10px;
+}
+
+.side .spacer .titlebox {
+    margin-top: 217px;
+}
+
+.sidecontentbox .content {
+    margin: 20px 0 0 0;
+    border: 0;
+}
+
+#search input[type=text],
+.morelink {
+    padding: 5px 0;
+    border: 0;
+    background: inherit;
+    background-image: inherit;
+}
+
+.morelink {
+    position: relative;
+}
+
+#search input[type=text] {
+    padding: 10px;
+    background: white;
+    margin-top: 7px;
+}
+
+a[href*="#btn"],
+.submit-text .morelink:before,
+.submit-link .morelink:before {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    right: 0;
+    font-size: 15px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    text-shadow: 0 2px 1px rgba(0,0,0,0.7);
+    letter-spacing: 0.1px;
+    transition: all .2s ease;
+}
+
+a[href*="#btn"] {
+    position: static;
+    display: block;
+    margin: 0 auto;
+    padding: 12px 0;
+    text-align: center;
+    height: 25px;
+}
+
+.submit-text .morelink:before {
+    content: "Submit Text";
+}
+
+.submit-link .morelink:before {
+    content: "Submit Link";
+}
+
+.morelink .nub {
+    display: none;
+}
+
+.morelink a {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+.morelink:hover {
+   background: inherit;
+}
+
+#ad_main,
+.side .sponsorshipbox {
+   margin: 0 0 20px 0;
+   background-color: #fff;
+}
+
+.loggedin .side .sponsorshipbox {
+   margin: 20px 0 0 0;
+}
+
+#ad_main {
+   margin-bottom: 20px;
+}
+
+.login-form-side {
+    background-color: #fff;
+    color: #333;
+    margin: 20px 0;
+    border: 0;
+}
+
+.login-form-side a {
+    color: #333;
+}
+
+.side a[href*="atlasreactorgame.com/en/news"] {
+    position: relative;
+    display: block;
+    top: -160px;
+    right: 20px;
+    width: 260px;
+    height: 30px;
+    background-image: url(%%open-alpha-th%%);
+    background-position: center center;
+    background-size: cover;
+    padding: 130px 20px 20px 20px;
+    box-shadow: 0 0 0 2px #A6E4A5, 0 0 15px #A6E4A5;
+}
+
+.loggedin .side a[href*="atlasreactorgame.com/en/news"] { top: -170px; }
+.moderator .side a[href*="atlasreactorgame.com/en/news"] { top: -235px }
+.res .side a[href*="atlasreactorgame.com/en/news"] { top: -160px; }
+.res.loggedin .side a[href*="atlasreactorgame.com/en/news"] { top: -190px; }
+.res.moderator .side a[href*="atlasreactorgame.com/en/news"] { top: -260px }
+
+.side a[href*="atlasreactorgame.com/en/news"]:after{
+    position: absolute;
+    padding: 20px 20px 20px 20px;
+    bottom: 0;
+    left: 0;
+    content: attr(title);
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: bold;
+    line-height: 18px;
+    color: #A6E4A5;
+    width: 260px;
+    height: 40px;
+    background-color: rgba(15,22,56,0.85);
+    opacity: 0.85;
+    transition: all .2s ease;
+}
+
+.side a[href="https://www.atlasreactorgame.com/en/sign-up/"] {
+    display: block;
+    background: url(%%sprite-1%%) no-repeat 0 0;
+    width: 206px;
+    height: 55px;
+    position: absolute;
+        top: 135px;
+        right: 5%;
+    z-index: 900;
+    transition: inherit;
+}
+
+.side a[href="https://www.atlasreactorgame.com/en/sign-up/"]:hover {
+    background: url(%%sprite-1%%) no-repeat 0 -59px;
+}
+
+.side a[href*="#community"] {
+    display: block;
+    z-index: 900;
+    background: url(%%sprite-1%%) no-repeat -255px -322px;
+    width: 160px;
+    padding: 40px 0 0 5px;
+    margin-left: 145px;
+    margin-top: 0;
+    position: absolute;
+    top: 150px;
+    left: 5%;
+    color: #fff;
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: left;
+    color: transparent;
+    transition: all .2s ease;
+}
+
+.side a[href*="#community"]:before {
+    content: "►";
+     position: absolute;
+        top: -5px;
+        left: -90px;
+    z-index: 950;
+    color: #fff;
+    font-size: 24px;
+    text-shadow: 0 2px 1px rgba(0,0,0,0.7);
+    transition: all .2s ease;
+}
+
+.side a[href*="#community"]:hover {
+    text-shadow: 0 2px 1px rgba(0,0,0,0.7);
+    color: #fff;
+    margin-top: -20px;
+}
+
+.side a[href*="#community"]:hover:before {
+    top: 15px;
+}
+
+.side a[href*="#community"]:hover:after {
+    top: -18px;
+    /*animation-play-state: running;*/
+}
+
+.side a[href*="#community"]:after {
+    content: " ";
+    position: absolute;
+        top: -38px;
+        left: 0;
+    background-image: url(%%community-sprite%%);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 3px;
+    height: 75px;
+    width: 134px;
+    transition: all .2s ease;
+    /*animation: playH 2.8s steps(84) infinite;
+    animation-play-state: paused;*/
+    margin-left: -145px;
+}
+
+.side .usertext-body {
+    margin-top: -180px;
+}
+
+.side a[href*="/news/"]:hover:after {
+    opacity: 1;
+}
+
+.side a[href="https://www.reddit.com/r/AtlasReactor/wiki/new"] {
+    height: 32px;
+    background-color: rgb(76,82,156);
+    color: white;
+    line-height: 31px;
+    font-size: 16px!important;
+    display: block;
+    text-align: right;
+    border-radius: 2px;
+    padding-top: 5px;
+    padding-right: 47px;
+    padding-bottom: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
+    transition: all .25s ease;
+    text-transform:lowercase;
+}
+
+.side a[href="https://www.reddit.com/r/AtlasReactor/wiki/new"]:hover{
+    background-color: rgb(101,108,204);
+    transition: all .25s ease;
+}
+
+.side a[href="https://www.atlasreactorgame.com/en/"] {
+    display: inline-block;
+    width: 42px;
+    height: 48px;
+    background: url(%%sprite-1%%) no-repeat -271px -100px;
+    margin: 10px -5px 0 5px;
+}
+
+.side a[href="https://twitter.com/AtlasReactor"],
+.side a[href="https://www.facebook.com/AtlasReactor"],
+.side a[href="https://www.youtube.com/channel/UCcx8pTZKeZ_S3gJa7CrjGdw"],
+.side a[href="https://www.instagram.com/atlasreactor/"] {
+    display: inline-block;
+    width: 36px;
+    height: 52px;
+    margin: 10px 5px 0 0;
+}
+
+.side a[href="https://twitter.com/AtlasReactor"] { 
+    background: url(%%sprite-1%%) no-repeat -217px -47px; 
+    margin: 0 5px 0 15px; 
+    position: relative;
+    top: 3px;
+}
+.side a[href="https://www.facebook.com/AtlasReactor"] { background: url(%%sprite-1%%) no-repeat -214px -100px }
+.side a[href="https://www.youtube.com/channel/UCcx8pTZKeZ_S3gJa7CrjGdw"] { background: url(%%sprite-1%%) no-repeat -278px -43px;  margin: 10px 10px 0 5px; }
+.side a[href="https://www.instagram.com/atlasreactor/"] { background: url(%%sprite-1%%) no-repeat -272px -160px; }
+
+.side a[href*='=flair'] {
+    width: 45%;
+    display: inline-block;
+    position: relative;
+    margin: 4px 1% 4px 0;
+    font-size: 100%;
+    padding: 3px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 3px;
+    opacity: 1;
+}
+
+.side a[href*='flair']:nth-child(even) {
+    margin: 4px 0 4px 0;
+}
+
+.side a[href*='LORE'] { 
+    border: 2px solid #ff38d1;
+    background: #ff38d1;
+}
+
+.side a[href*='CONCEPTS'] { 
+    border: 2px solid  #171aea;
+    background: #171aea;
+}
+
+.side a[href*='ART'] { 
+    border: 2px solid #1de3dd;
+    background: #1de3dd;
+}
+
+.side a[href*='COMMUNITY'] { 
+    border: 2px solid #ff891f;
+    background: #ff891f;
+}
+
+.side a[href*='DISCUSSION'] { 
+    border: 2px solid #669999;
+    background: #669999;
+}
+
+.side a[href*='PATCHNOTES'] { 
+    border: 2px solid #d3d3d3;
+    background: #d3d3d3;
+}
+
+.side a[href*='GUIDE'] { 
+    border: 2px solid #000000;
+    background: #000000;
+}
+
+.side a[href*='News%2B%26%2BEvents'] { 
+    border: 2px solid #f21819;
+    background: #f21819;
+}
+
+.side a[href*='TOURNAMENT'] { 
+    border: 2px solid #D7AF00;
+    background: #D7AF00;
+}
+
+.side a[href*='QUESTION'] { 
+    border: 2px solid #629632;
+    background: #629632;
+}
+
+.side a[href*='FLUFF'] { 
+    border: 2px solid #968afc;
+    background: #968afc;
+}
+
+.side a[href*='GAMEPLAY'] { 
+    border: 2px solid #52D017;
+    background: #52D017;
+}
+
+.side a[href*='MOD'] { 
+    border: 2px solid #A6E4A5;
+    background: #A6E4A5;
+}
+
+.side a[href*='MEDIA'] { 
+    border: 2px solid  #AA0078;
+    background: #AA0078;
+}
+
+.side a[href*='RECRUITMENT'] { 
+    border: 2px solid  #0099CC;
+    background: #0099CC;
+}
+
+/*-------------------------------
+   Hide create subreddit box
+-------------------------------*/
+
+.sidebox.create {
+    display: none;
+}
+
+
+/* LINK-FLAIR-STUFF ---------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Put this on the line below as well if normal spoilers should have warning bars.linklisting .linkflair-spo, .linklisting .linkflair-spo:hover,  */
+
+.thing.stickied.link a.title {
+    color: #99CC99;
+}
+
+.linkflair-HYPE > .linkflairlabel, .linkflair-HYPE > div > p > .linkflairlabel  { 
+    color: #ff38d1;
+    
+}
+div.linkflair-HYPE {
+    border-left: 4px solid #ff38d1 !important;
+}
+
+
+.linkflair-CONCEPT > .linkflairlabel, .linkflair-CONCEPT > div > p > .linkflairlabel  { 
+    color: #171aea;
+}
+div.linkflair-CONCEPT {
+    border-left: 4px solid #171aea !important;
+}
+
+.linkflair-VIDEO > .linkflairlabel, .linkflair-VIDEO > div > p > .linkflairlabel  { 
+    color: #1de3dd;
+}
+div.linkflair-VIDEO {
+    border-left: 4px solid #1de3dd!important;
+}
+
+.linkflair-COMMUNITY > .linkflairlabel, .linkflair-COMMUNITY > div > p > .linkflairlabel  { 
+    color: #ff891f;
+}
+div.linkflair-COMMUNITY {
+    border-left: 4px solid #ff891f !important;
+}
+
+.linkflair-FREELANCER > .linkflairlabel, .linkflair-FREELANCER > div > p > .linkflairlabel  { 
+    color: #00e52f;
+}
+div.linkflair-FREELANCER {
+    border-left: 4px solid #00e52f!important;
+}
+
+.linkflair-DISCUSSION > .linkflairlabel, .linkflair-DISCUSSION > div > p > .linkflairlabel  { 
+    color: #669999;
+}
+div.linkflair-DISCUSSION {
+    border-left: 4px solid #669999!important;
+}
+
+.linkflair-GUIDE > .linkflairlabel, .linkflair-GUIDE > div > p > .linkflairlabel  { 
+    color: #000000;
+}
+div.linkflair-GUIDE {
+    border-left: 4px solid #000000 !important;
+}
+	
+.linkflair-TRION .linkflairlabel, .linkflair-TRION > div > p > .linkflairlabel  { 
+    color: #f21819;
+}
+div.linkflair-TRION {
+    border-left: 4px solid #f21819!important;
+}
+
+.linkflair-EVENT .linkflairlabel, .linkflair-EVENT > div > p > .linkflairlabel  { 
+    color: #D7AF00;
+}
+div.linkflair-EVENT {
+    border-left: 4px solid #D7AF00 !important;
+}
+
+.linkflair-QUESTION .linkflairlabel, .linkflair-QUESTION > div > p > .linkflairlabel  { 
+    color: #7F9A65;
+}
+div.linkflair-QUESTION {
+    border-left: 4px solid #629632 !important;
+}
+
+.linkflair-FLUFF .linkflairlabel, .linkflair-Fluff > div > p > .linkflairlabel  { 
+    color: #968afc;
+}
+div.linkflair-FLUFF {
+    border-left: 4px solid #968afc!important;
+}
+
+.linkflair-PATCHNOTES .linkflairlabel, .linkflair-Patchnotes > div > p > .linkflairlabel  { 
+    color: #d3d3d3;
+}
+div.linkflair-PATCHNOTES {
+    border-left: 4px solid #d3d3d3!important;
+}
+
+.linkflair-MOD .linkflairlabel, .linkflair-MOD > div > p > .linkflairlabel  { 
+    color: #A6E4A5;
+}
+div.linkflair-MOD {
+    border-left: 4px solid #A6E4A5!important;
+}
+
+.linkflair-GAMEPLAY .linkflairlabel, .linkflair-GAMEPLAY > div > p > .linkflairlabel  { 
+    color: #52D017;
+}
+div.linkflair-GAMEPLAY {
+    border-left: 4px solid #52D017!important;
+}
+
+.linkflair-MEDIA .linkflairlabel, .linkflair-MEDIA > div > p > .linkflairlabel  { 
+    color: #AA0078;
+}
+div.linkflair-MEDIA {
+    border-left: 4px solid #AA0078!important;
+}
+
+.linkflair-RECRUITMENT .linkflairlabel, .linkflair-RECRUITMENT > div > p > .linkflairlabel  { 
+    color: #0099CC;
+}
+div.linkflair-RECRUITMENT {
+    border-left: 4px solid #0099CC!important;
+}
+
+html:lang(re) .link:not(.linkflair-HYPE),
+html:lang(re) .link:not(.linkflair-CONCEPT),
+html:lang(re) .link:not(.linkflair-VIDEO),
+html:lang(re) .link:not(.linkflair-COMMUNITY),
+html:lang(re) .link:not(.linkflair-FREELANCER),
+html:lang(re) .link:not(.linkflair-DISCUSSION),
+html:lang(re) .link:not(.linkflair-FLUFF),
+html:lang(re) .link:not(.linkflair-GUIDE),
+html:lang(re) .link:not(.linkflair-TRION),
+html:lang(re) .link:not(.linkflair-EVENT),
+html:lang(re) .link:not(.linkflair-MEDIA),
+html:lang(re) .link:not(.linkflair-RECRUITMENT) {
+    display: none
+    }
+
+.commentarea .thing .collapsed{ 
+    padding: 0 0 0 27px;
+}
+
+.commentarea .thing {
+    background: #ffffff;
+    border-left:  3px #efefef solid;
+    padding: 10px 10px 8px 5px;
+    margin: 0 0 10px 0;
+    box-shadow: 1px 1px 5px #ddd;
+}
+
+.res-commentBoxes .comment {
+     border: 0 !important;
+     border-left:  3px #efefef solid !important;
+}
+
+.commentarea .child .thing {
+    border:  none;
+    border-left:  2px #efefef solid;
+    padding: 3px 10px 3px 4px;
+    margin: 0 0 3px 0;
+    background-color: #fff;
+}
+
+.commentarea .child .thing .child .thing {
+    border:  none;
+
+    background-color: #ffffff;
+    border-left:  0px #e3e3e3 solid; 
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.16);
+    border: 1px solid transparent!important;
+    margin: 0 7px 14px 10px!important;
+    padding: 5px 1px 0 5px!important;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.moderator .comment.spam {
+    background-color: #eee;
+}
+
+.comment .midcol {
+    width: 25px;
+    margin-right: 7px;
+}
+
+.midcol {
+    margin-right: 14px;
+    overflow: visible;
+}
+
+.arrow {
+    position: relative;
+    left: -1px;
+    opacity: .6;
+    transition: opacity ease .2s;
+}
+
+.arrow:hover {
+    opacity: 1;
+}
+
+.link .score {
+    margin-top: -2px;
+}
+
+.res-nightmode .arrow.up,
+.res-nightmode .arrow.up:hover,
+.arrow.up {
+    background: url(%%sprite-1%%) no-repeat -3px -164px;
+    width: 25px;
+    height: 18px;
+}
+
+.res-nightmode .arrow.upmod,
+.res-nightmode .arrow.upmod:hover,
+.arrow.upmod {
+    background: url(%%sprite-1%%) no-repeat -31px -164px;
+    width: 25px;
+    height: 18px;
+    opacity: 1;
+}
+
+.res-nightmode .arrow.down,
+.res-nightmode .arrow.down:hover,
+.arrow.down {
+    background: url(%%sprite-1%%) no-repeat -58px -164px;
+    width: 25px;
+    height: 18px;
+    overflow: visible;
+}
+
+.res-nightmode .arrow.downmod,
+.res-nightmode .arrow.downmod:hover,
+.arrow.downmod {
+    background: url(%%sprite-1%%) no-repeat -86px -164px;
+    width: 25px;
+    height: 18px;
+    opacity: 1;
+}
+
+.arrow.down:hover:after {
+    display: block;
+    opacity: 1;
+}
+
+.arrow.down:after {
+    display: none;
+    width: 285px;
+    content: "Only use downvotes for content that doesn't add anything to the subject and not because you disagree";
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: rgba(15,22,56,0.85);
+    position: absolute;
+    z-index: 900;
+    margin: -15px 0 0 30px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity ease .2s;
+}
+
+.link .usertext-body div.md{
+    border: none;
+    background: none;
+    padding: 0;
+    background-color: #ffffff;        
+}
+
+.link .usertext-body div.md p{
+    margin: 10px 0;
+}
+.link .last-clicked {
+    border: none; 
+}
+
+.link .flat-list{
+    padding-top: 5px;
+}
+                
+.linkinfo {
+    padding:15px; 
+    border:none;
+    background-color: #ffffff;
+    border: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
+    border-radius: 2px;
+    margin: 20px 0;
+}
+
+.comments-page .side .linkinfo .date {
+  color: #888;
+}
+.linkinfo .score .number {
+  font-size: 22px;
+  font-weight: bold;
+}
+.linkinfo .score .word {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.linkinfo .totalvotes {
+  font-size: 80%;
+}
+
+.linkinfo .shortlink {
+  font-size: 80%;
+  margin-top: 3px;
+}
+
+.linkinfo .shortlink input {
+    border: 1px solid #7BB850;
+    padding: 3px 6px;
+}
+
+.modtools-page>div.content,
+div.content {
+    position: relative;
+    margin: 315px 322px 0 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.combined-search-page div.content {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.res-nightmode .modtools-page>div.content,
+.res-nightmode div.content,
+.res-nightmode .combined-search-page div.content {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.submit.content {
+    padding: 20px;
+}
+
+.wiki-page .wiki-page-content {
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+.link.last-clicked {
+    overflow: visible;
+}
+
+.link, .link.promotedlink.promoted {
+    margin: 0px;
+    padding: 5px;
+    background-color: #e4f0dc;
+    border: 1px solid #7BB850;
+    background-color: white;
+    padding: 10px;
+    margin-left: -9px;
+    margin-right: -2px;
+    margin-bottom:10px!important;
+}
+
+.linklisting .thing, .search-result {
+    border:  none;
+    padding: 10px 10px 10px 30px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,.2);
+    border-radius: 2px;
+    position: relative;
+    background-color: #fff;
+}
+
+.res-nightmode .linklisting .thing, .res-nightmode .search-result {
+    background-color: #333;
+}
+
+.search-result {
+    overflow: hidden;
+}
+
+.link .rank{
+    text-align: center;
+}
+
+.commentarea {
+    border: none;
+    padding: 10px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,.2);
+    border-radius: 2px;
+    background-color: white;
+    margin: 20px 5px;
+}
+
+.subreddit-rules-page {
+    max-width: 100%;
+    position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+    padding: 20px;
+    background-color: #fff;
+    margin: 0;
+}
+
+.subreddit-rules-page:before {
+    top: 20px;
+    left: 20px;
+}
+
+.subreddit-rules-page>header {
+    margin-left: 60px;
+}
+
+.stylesheet-customize-container {
+    padding: 0 20px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.footer {
+    background-color: #fff;
+}
+
+.footer a {
+    color: #333;
+}
+
+.expando-button {
+    opacity: .6;
+    transition: opacity ease .2s;
+}
+
+.expando-button.image.gallery.collapsedExpando {
+    background-position: -117px -164px;
+}
+
+.expando-button.video-muted:after,
+.expando-button.image:after,
+.expando-button.video:after,
+.expando-button.selftext:after {
+    position: absolute;
+    left: 20px;
+    top: -2px;
+    font-size: 12px;
+    color: #333;
+}
+
+.expando-button.image:after{ content: "img"; }
+.expando-button.video:after { content: "vod"; }
+.expando-button.selftext:after { content: "txt"; }
+.expando-button.video-muted:after { content: "gifv"; }
+
+.expando-button.image.collapsedExpando,
+.expando-button.video.collapsed,
+.expando-button.selftext.collapsed,
+.expando-button.video-muted.collapsed {
+    background: url(%%sprite-1%%) no-repeat -117px -164px;
+    width: 17px;
+    height: 16px;
+    position: relative;
+    margin-right: 30px;
+}
+
+.expando-button.image.collapsedExpando:hover,
+.expando-button.video.collapsed:hover,
+.expando-button.selftext.collapsed:hover,
+.expando-button.video-muted.collapsed:hover {
+    background: url(%%sprite-1%%) no-repeat -117px -164px;
+    width: 17px;
+    height: 16px;
+    opacity: 1;
+}
+
+.expando-button.image.expanded:after,
+.expando-button.video.expanded:after,
+.expando-button.selftext.expanded:after,
+.expando-button.video-muted.expanded:after {
+    content: "";
+}
+
+.expando-button.image.expanded,
+.expando-button.video.expanded,
+.expando-button.selftext.expanded,
+.expando-button.video-muted.expanded, .eb-se {
+    background: url(%%sprite-1%%) no-repeat -141px -162px;
+    width: 21px;
+    height: 20px;
+    position: relative;
+}
+
+.expando-button.image.expanded:hover,
+.expando-button.video.expanded:hover,
+.expando-button.selftext.expanded:hover,
+.expando-button.video-muted.expanded:hover, .eb-se:hover {
+    background: url(%%sprite-1%%) no-repeat -141px -162px;
+    width: 21px;
+    height: 20px;
+    opacity: 1;
+}
+
+a.author {
+    font-size: 12px;
+    font-weight: normal;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.search-result-group {
+    max-width: 100%;
+}
+
+.flairselector h2 {
+   margin: 0 auto 20px auto;
+   background: url(%%sprite-1%%) no-repeat -188px -257px;
+   box-shadow: none;
+   color: transparent;
+   text-shadow: none;
+   height: 10px;
+   padding: 0;
+   width: 220px;
+}
+
+@keyframes playH {
+    to {
+        background-position: -11172px 0
+    }
+}
+
+/** Night Mode **/
+.res-nightmode .side,
+.res-nightmode body,
+.res-nightmode #header,
+.res-nightmode #header-bottom-right,
+.res-nightmode .morelink {
+    background-color: transparent;
+}
+
+.res-nightmode .commentarea,
+.res-nightmode .footer,
+.res-nightmode .stylesheet-customize-container,
+.res-nightmode #search input[type="text"],
+.res-nightmode .sidecontentbox, .res-nightmode .side .spacer .titlebox {
+    background-color: rgb(38, 38, 38);
+}
+
+.res-nightmode .side .spacer .titlebox .redditname {
+    background-color: #6d6f81;
+}
+
+.res-nightmode .md a,
+.res-nightmode .side a,
+.res-nightmode a {
+    color: #eee;
+}
+
+.res-nightmode .res-fancy-toggle-button, .res-nightmode .res-fancy-toggle-button.add, .res-nightmode .res-fancy-toggle-button.remove,
+.res-nightmode .flair {
+    color: #ccc;
+}
+
+.res-nightmode .comment .flair {
+    color: transparent;
+    font-size: 0;
+}
