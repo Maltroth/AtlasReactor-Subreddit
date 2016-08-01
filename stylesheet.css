@@ -1,11 +1,11 @@
 /*
-	Version 2.0.0-dev
-	Stylesheet by Maltroth
-	Last modified: 5 July 2016
-	Details: This is a custom subreddit template made by /u/Maltroth based on /r/Naut 4.0
-	https://github.com/Maltroth/AtlasReactor-Subreddit
+  Version 2.0.0
+  Stylesheet by Maltroth
+  Last modified: 1 August 2016
+  Details: This is a custom subreddit template made by /u/Maltroth based on /r/Naut 4.0
+  https://github.com/Maltroth/AtlasReactor-Subreddit
 
-	-------------------------------------------------------------------------- */
+  -------------------------------------------------------------------------- */
 body {
   max-width: 100%;
   font-family: "Open Sans Condensed", Tahoma, Arial;
@@ -235,7 +235,7 @@ div.titlebox span.number:after {
 .comment .md p > a,
 .comment .md p > a:visited {
     color: #24a0ed;
-    font-weight: 600;
+    font-weight: 600 !important;
 }
 
 .md a:visited,
@@ -485,7 +485,7 @@ div.titlebox span.number:after {
 .link .entry .buttons li a.flairselectbtn,
 .link .entry .buttons li a.comments,
 .side .titlebox .md h2 a {
-  color: #2cd1f0;
+  color: #98abba;
 }
 
 .side .titlebox .md h2 a:hover {
@@ -774,8 +774,9 @@ div.RES-keyNav-activeElement, div.commentarea div.RES-keyNav-activeElement.entry
   width: 450px;
 }
 
-.thing.link.stickied a.title, .thing.link.stickied a, .thing.link.stickied .entry li .comments {
-  color: #2cd1f0 !important;
+.thing.link.stickied a.title, .thing.link.stickied a, .thing.link.stickied .entry li .comments,
+.stickied.comment>.entry a, .stickied.comment .tagline .stickied-tagline {
+  color: rgba(39,28,60,0.8) !important;
 }
 
 .res .thing .tagline .author.moderator,
@@ -1057,6 +1058,11 @@ div.linkflair-RECRUITMENT {
 
 .thing .title.loggedin.click, .thing .title.click, .thing .title.loggedin, .thing .title {
   color: #333;
+ 
+}
+
+.link .title {
+    font-size: 12.5pt;
 }
 
 .combined-search-page .linkflairlabel,
@@ -1399,7 +1405,7 @@ div.linkflair-RECRUITMENT {
 
 .sidecontentbox .flair-titus:before,
 .link .flair-titus:before {
-  background: url(%%sprite-flairs%%) no-repeat -142px -77px;
+  background: url(%%sprite-flairs%%) no-repeat -137px -77px;
 }
 
 .sidecontentbox .flair-zuki:before,
@@ -1561,4 +1567,57 @@ div.linkflair-RECRUITMENT {
 
 .bottommenu:last-child {
   bottom: 200px;
+}
+
+.res-nightmode body {
+    background: #000 url(%%night-bg-home%%);
+}
+
+.res-nightmode .stylesheet-customize-container .pretty-form,
+.res-nightmode .thing,
+.res-nightmode #images,
+.res-nightmode .commentarea>.usertext,
+.res-nightmode .comments-page .side .linkinfo{
+    background-color: #373737 !important;
+    border-bottom: 1px solid #212121;
+}
+
+.res-nightmode .side .titlebox h1.redditname:before,
+.res-nightmode .side .sidecontentbox,
+.res-nightmode .side .titlebox .md h4 a,
+.res-nightmode #search input[type="text"],
+.res-nightmode #sr-header-area,
+.res-nightmode #newlink-with-image-upload .image-upload-drop-target {
+    background-color: rgb(38, 38, 38);
+}
+
+.res-nightmode .tabmenu li a,
+.res-nightmode .tabmenu li a, .res-nightmode .tabmenu li.selected a,
+.res-nightmode .flair,
+.res-nightmode #header-bottom-right {
+    background-color: transparent;
+}
+
+.res-nightmode #header-bottom-right .separator, 
+.res-nightmode #sr-header-area .sr-bar a,
+.res-nightmode .morelink a,
+.res-nightmode .link .entry .tagline a,
+.res-nightmode .usertext-edit textarea {
+    color: #eee !important;
+}
+
+.res-nightmode .footer-parent:before {
+        box-shadow: 0 0 200px #121212;
+}
+
+.res-nightmode .commentarea>.usertext textarea:not(:focus) {
+    background: #999 url(%%commentboxbg%%);
+}
+
+.res-nightmode .commentarea>.usertext textarea {
+    background: #999;
+}
+
+.res-nightmode #header:before {
+    background-color: rgba(39,28,60,0.8);
 }
