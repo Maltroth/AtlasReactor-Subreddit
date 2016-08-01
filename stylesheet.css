@@ -12,6 +12,14 @@ body {
   background: #E8E3F7 url(%%bg-home%%) no-repeat 0 0;
 }
 
+button, button:hover {
+    background-color: #24a0ed !important;
+}
+
+.res .content .RESBigEditorPop {
+    background-color: transparent !important;
+}
+
 .titlebox:before {
   font-family: "Open Sans Condensed", Tahoma, Arial;
 }
@@ -68,7 +76,8 @@ body > .content {
   box-shadow: none;
   border-bottom: 2px solid #d92137;
   background-position: center 27%;
-  background-size: 1920px auto;
+  background-size: 100% auto;
+  background-color: #15122d;
 }
 
 #header:before {
@@ -89,7 +98,6 @@ body > .content {
 
 #header:after {
   content: " ";
-  background-image: url(%%banner-transparent%%);
   background-position: center;
   width: 100%;
   height: 273px;
@@ -103,10 +111,10 @@ body > .content {
   color: transparent;
   position: absolute;
   top: -175px;
-  left: 25%;
+  left: 0;
   right: 0;
   z-index: 2;
-  height: 275px;
+  height: 230px;
 }
 
 #header-img.default-header,
@@ -119,6 +127,10 @@ body > .content {
   left: 0;
   z-index: 500;
   padding-left: 0;
+}
+
+#header-img {
+    display: none;
 }
 
 #header .tabmenu {
@@ -217,6 +229,18 @@ div.titlebox span.number:after {
 .side .titlebox .md > p:nth-child(1),
 .side .titlebox .md > p:nth-child(2) {
   height: 0;
+}
+
+.md a:visited,
+.comment .md p > a,
+.comment .md p > a:visited {
+    color: #24a0ed;
+    font-weight: 600;
+}
+
+.md a:visited,
+.comment .md p > a:visited {
+    color: rgba(39,28,60,0.8);
 }
 
 .side .md a[href*="#fan-art"],
@@ -472,7 +496,7 @@ div.titlebox span.number:after {
 .side a[href="https://twitter.com/AtlasReactor"],
 .side a[href="https://www.facebook.com/AtlasReactor"],
 .side a[href="https://www.youtube.com/channel/UCcx8pTZKeZ_S3gJa7CrjGdw"],
-.side a[href="https://www.twitch.tv/trionworlds"],
+.side a[href="https://www.twitch.tv/trionworlds/"],
 .side a[href="https://www.instagram.com/atlasreactor/"],
 .side .titlebox .md blockquote a[href*="discord.gg"] {
   display: inline-block;
@@ -487,7 +511,7 @@ div.titlebox span.number:after {
 .side a[href="https://twitter.com/AtlasReactor"]:hover,
 .side a[href="https://www.facebook.com/AtlasReactor"]:hover,
 .side a[href="https://www.youtube.com/channel/UCcx8pTZKeZ_S3gJa7CrjGdw"]:hover,
-.side a[href="https://www.twitch.tv/trionworlds"]:hover,
+.side a[href="https://www.twitch.tv/trionworlds/"]:hover,
 .side a[href="https://www.instagram.com/atlasreactor/"]:hover,
 .side .titlebox .md blockquote a[href*="discord.gg"]:hover {
   opacity: 1;
@@ -514,7 +538,7 @@ div.titlebox span.number:after {
   background: url("%%sprite-1%%") no-repeat -270px -99px;
 }
 
-.side a[href="https://www.twitch.tv/trionworlds"] {
+.side a[href="https://www.twitch.tv/trionworlds/"] {
   background: url("%%sprite-1%%") no-repeat -210px -153px;
 }
 
@@ -582,6 +606,7 @@ div.titlebox span.number:after {
 
 .side:before {
   background-size: cover;
+  background-position: center;
 }
 
 .morelink a {
@@ -801,6 +826,17 @@ div.RES-keyNav-activeElement, div.commentarea div.RES-keyNav-activeElement.entry
 
 .commentarea > .usertext textarea:not(:focus) {
   background: #f4f4f4 url(%%commentboxbg%%) no-repeat 50% 50%;
+}
+
+.flairoptionpane ul li .linkflair span.linkflairlabel {
+    width: 208px!important;
+    max-width: 200px;
+    background: transparent;
+}
+
+.flairoptionpane ul li .linkflair a.title {
+    display: none;
+    opacity: 0 !important;
 }
 
 /* LINK-FLAIR-STUFF ---------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -1023,6 +1059,7 @@ div.linkflair-RECRUITMENT {
   color: #333;
 }
 
+.combined-search-page .linkflairlabel,
 .linklisting .thing .title > .linkflairlabel {
   position: absolute !important;
   width: 150px;
@@ -1402,6 +1439,52 @@ div.linkflair-RECRUITMENT {
 
 .submit-page #header-bottom-left {
   width: 635px;
+}
+
+.search-page .side {
+    margin-top: 504px;
+}
+
+.search-page .side .titlebox .md>ul:first-of-type {
+    display: none;
+}
+
+.search-page #header-img-a {
+    top: 0;
+}
+
+.search-page .side .md>p:nth-child(2)>a[href*="discord.gg"], .search-page #header-bottom-left {
+    top: 166px;
+}
+
+.combined-search-page .search-result {
+    padding: 16px 25px;
+    margin: 0 -16px;
+    position: relative;
+    border-bottom: 1px solid #efefef;
+}
+
+.combined-search-page .search-result .search-result-header .search-title {
+    margin: 0;
+    font-size: 13.5pt;
+    font-family: Arial,sans-serif;
+    transition: all .15s ease;
+    overflow: visible;
+    color: #333;
+}
+
+.search-result.has-thumbnail {
+    display: block;
+}
+
+.search-result .flair:before {
+    height: 15px;
+    position: relative;
+        top: 3px;
+}
+
+.search-page #search input[type=text] {
+    margin-top: 16px;
 }
 
 .search-page #header,

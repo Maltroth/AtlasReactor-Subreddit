@@ -7,6 +7,14 @@ body {
 	background: #E8E3F7 url(%%bg-home%%) no-repeat 0 0;
 }
 
+button, button:hover {
+    background-color: #24a0ed !important;
+}
+
+.res .content .RESBigEditorPop {
+    background-color: transparent !important;
+}
+
 .titlebox:before {
 	font-family: $fonts;
 }
@@ -209,6 +217,18 @@ div.titlebox span.number:after {
 .side .titlebox .md > p:nth-child(1),
 .side .titlebox .md > p:nth-child(2) {
 	height: 0;
+}
+
+.md a:visited,
+.comment .md p > a,
+.comment .md p > a:visited {
+    color: #24a0ed;
+    font-weight: 600;
+}
+
+.md a:visited,
+.comment .md p > a:visited {
+    color: rgba(39,28,60,0.8);
 }
 
 .side .md a[href*="#fan-art"],
@@ -855,6 +875,7 @@ div.linkflair-RECRUITMENT {	border-left: 2px solid #0099CC!important; }
 	color: #333;
 }
 
+.combined-search-page .linkflairlabel,
 .linklisting .thing .title > .linkflairlabel {
 	position: absolute !important;
 	width: 150px;
@@ -1080,7 +1101,57 @@ div.linkflair-RECRUITMENT {	border-left: 2px solid #0099CC!important; }
 
 .search-page .side .md > p:nth-child(2) > a[href*="discord.gg"],
 .search-page #header-bottom-left {
-	top: 116px;    
+  top: 116px;
+}
+
+.submit-page #header-bottom-left {
+  width: 635px;
+}
+
+.search-page .side {
+    margin-top: 504px;
+}
+
+.search-page .side .titlebox .md>ul:first-of-type {
+    display: none;
+}
+
+.search-page #header-img-a {
+    top: 0;
+}
+
+.search-page .side .md>p:nth-child(2)>a[href*="discord.gg"], .search-page #header-bottom-left {
+    top: 166px;
+}
+
+.combined-search-page .search-result {
+    padding: 16px 25px;
+    margin: 0 -16px;
+    position: relative;
+    border-bottom: 1px solid #efefef;
+}
+
+.combined-search-page .search-result .search-result-header .search-title {
+    margin: 0;
+    font-size: 13.5pt;
+    font-family: Arial,sans-serif;
+    transition: all .15s ease;
+    overflow: visible;
+    color: #333;
+}
+
+.search-result.has-thumbnail {
+    display: block;
+}
+
+.search-result .flair:before {
+    height: 15px;
+    position: relative;
+        top: 3px;
+}
+
+.search-page #search input[type=text] {
+    margin-top: 16px;
 }
  
 .submit-page #header-bottom-left {
