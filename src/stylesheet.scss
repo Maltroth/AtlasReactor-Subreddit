@@ -1331,3 +1331,27 @@ div.linkflair-RECRUITMENT {	border-left: 2px solid #0099CC!important; }
 .res-nightmode #header:before {
 	background-color: rgba(39,28,60,0.8);
 }
+
+.pinHeader-header #header {
+	height: 301px;
+	z-index: 900;
+}
+
+.pinHeader-header .content {
+	margin-top: 50px!important;
+}
+
+.pinHeader-header .side {
+	margin-top: 464px;
+}
+
+.pinHeader-header .side .md a[href*="#fan-art"], 
+.pinHeader-header .side a[href*="#community"], 
+.pinHeader-header .side .md a[href*="https://www.atlasreactorgame.com/en/news/"],
+.pinHeader-header .side .titlebox h1.redditname,
+.pinHeader-header .side:before,
+.pinHeader-header .titlebox span.subscribers, 
+.pinHeader-header .titlebox .fancy-toggle-button {
+	position: fixed;
+	z-index: 950;
+}
