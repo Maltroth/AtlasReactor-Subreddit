@@ -8,11 +8,11 @@ body {
 }
 
 button, button:hover {
-    background-color: #24a0ed !important;
+	background-color: #24a0ed !important;
 }
 
 .res .content .RESBigEditorPop {
-    background-color: transparent !important;
+	background-color: transparent !important;
 }
 
 .titlebox:before {
@@ -222,13 +222,13 @@ div.titlebox span.number:after {
 .md a:visited,
 .comment .md p > a,
 .comment .md p > a:visited {
-    color: #24a0ed;
-    font-weight: 600 !important;
+	color: #24a0ed;
+	font-weight: 600 !important;
 }
 
 .md a:visited,
 .comment .md p > a:visited {
-    color: rgba(39,28,60,0.8);
+	color: rgba(39,28,60,0.8);
 }
 
 .side .md a[href*="#fan-art"],
@@ -692,7 +692,7 @@ div.RES-keyNav-activeElement, div.commentarea div.RES-keyNav-activeElement.entry
 
 .thing.link.stickied a.title, .thing.link.stickied a, .thing.link.stickied .entry li .comments,
 .stickied.comment>.entry a, .stickied.comment .tagline .stickied-tagline {
-    color: rgba(39,28,60,0.8) !important;
+	color: rgba(39,28,60,0.8) !important;
 }
 
 
@@ -773,105 +773,105 @@ div.RES-keyNav-activeElement, div.commentarea div.RES-keyNav-activeElement.entry
 	border: 2px solid #ff38d1;
 	background-color: #ff38d1;
 }
-.linkflair-HYPE > .linkflairlabel, .linkflair-HYPE > div > p > .linkflairlabel  { color: #ff38d1; }
+.linkflair-HYPE > .linkflairlabel, .linkflair-HYPE > div.entry > p.title > .linkflairlabel  { color: #ff38d1; }
 div.linkflair-HYPE { border-left: 2px solid #ff38d1 !important; }
 
 .side a[href*='CONCEPTS'] { 
 	border: 2px solid  #171aea;
 	background-color: #171aea;
 }
-.linkflair-CONCEPT > .linkflairlabel, .linkflair-CONCEPT > div > p > .linkflairlabel  { color: #171aea; }
+.linkflair-CONCEPT > .linkflairlabel, .linkflair-CONCEPT > div.entry > p.title > .linkflairlabel  { color: #171aea; }
 div.linkflair-CONCEPT {	border-left: 2px solid #171aea !important; }
 
 .side a[href*='ART'] { 
 	border: 2px solid #1de3dd;
 	background-color: #1de3dd;
 }
-.linkflair-VIDEO > .linkflairlabel, .linkflair-VIDEO > div > p > .linkflairlabel  { color: #1de3dd; }
+.linkflair-VIDEO > .linkflairlabel, .linkflair-VIDEO > div.entry > p.title > .linkflairlabel  { color: #1de3dd; }
 div.linkflair-VIDEO { border-left: 2px solid #1de3dd !important; }
 
 .side a[href*='COMMUNITY'] { 
 	border: 2px solid #ff891f;
 	background-color: #ff891f;
 }
-.linkflair-COMMUNITY > .linkflairlabel, .linkflair-COMMUNITY > div > p > .linkflairlabel  { color: #ff891f; }
+.linkflair-COMMUNITY > .linkflairlabel, .linkflair-COMMUNITY > div.entry > p.title > .linkflairlabel  { color: #ff891f; }
 div.linkflair-COMMUNITY { border-left: 2px solid #ff891f !important; }
 
 .side a[href*='DISCUSSION'] { 
 	border: 2px solid #669999;
 	background-color: #669999;
 }
-.linkflair-DISCUSSION > .linkflairlabel, .linkflair-DISCUSSION > div > p > .linkflairlabel  { color: #669999; }
+.linkflair-DISCUSSION > .linkflairlabel, .linkflair-DISCUSSION > div.entry > p.title > .linkflairlabel  { color: #669999; }
 div.linkflair-DISCUSSION { border-left: 2px solid #669999!important; }
 
 .side a[href*='PATCHNOTES'] { 
 	border: 2px solid #d3d3d3;
 	background-color: #d3d3d3;
 }
-.linkflair-PATCHNOTES .linkflairlabel, .linkflair-Patchnotes > div > p > .linkflairlabel  { color: #d3d3d3; }
+.linkflair-PATCHNOTES > .linkflairlabel, .linkflair-Patchnotes > div.entry > p.title > .linkflairlabel  { color: #d3d3d3; }
 div.linkflair-PATCHNOTES { border-left: 2px solid #d3d3d3!important; }
 
 .side a[href*='GUIDE'] { 
 	border: 2px solid #000000;
 	background-color: #000000;
 }
-.linkflair-GUIDE > .linkflairlabel, .linkflair-GUIDE > div > p > .linkflairlabel  { color: #000000; }
+.linkflair-GUIDE > .linkflairlabel, .linkflair-GUIDE > div.entry > p.title > .linkflairlabel  { color: #000000; }
 div.linkflair-GUIDE { border-left: 2px solid #000000 !important; }
 
 .side a[href*='News%2B%26%2BEvents'] { 
 	border: 2px solid #f21819;
 	background-color: #f21819;
 }
-.linkflair-TRION .linkflairlabel, .linkflair-TRION > div > p > .linkflairlabel  { color: #f21819; }
+.linkflair-TRION > .linkflairlabel, .linkflair-TRION > div.entry > p.title > .linkflairlabel  { color: #f21819; }
 div.linkflair-TRION { border-left: 2px solid #f21819 !important; }
 
 .side a[href*='TOURNAMENT'] { 
 	border: 2px solid #D7AF00;
 	background-color: #D7AF00;
 }
-.linkflair-EVENT .linkflairlabel, .linkflair-EVENT > div > p > .linkflairlabel  { color: #D7AF00; }
+.linkflair-EVENT > .linkflairlabel, .linkflair-EVENT > div.entry > p.title > .linkflairlabel  { color: #D7AF00; }
 div.linkflair-EVENT { border-left: 2px solid #D7AF00 !important; }
 
 .side a[href*='QUESTION'] { 
 	border: 2px solid #629632;
 	background-color: #629632;
 }
-.linkflair-QUESTION .linkflairlabel, .linkflair-QUESTION > div > p > .linkflairlabel  { color: #7F9A65; }
+.linkflair-QUESTION > .linkflairlabel, .linkflair-QUESTION > div.entry > p.title > .linkflairlabel  { color: #7F9A65; }
 div.linkflair-QUESTION { border-left: 2px solid #629632 !important; }
 
 .side a[href*='FLUFF'] { 
 	border: 2px solid #968afc;
 	background-color: #968afc;
 }
-.linkflair-FLUFF .linkflairlabel, .linkflair-Fluff > div > p > .linkflairlabel  { color: #968afc; }
+.linkflair-FLUFF > .linkflairlabel, .linkflair-Fluff > div.entry > p.title > .linkflairlabel  { color: #968afc; }
 div.linkflair-FLUFF { border-left: 2px solid #968afc !important; }
 
 .side a[href*='GAMEPLAY'] { 
 	border: 2px solid #52D017;
 	background-color: #52D017;
 }
-.linkflair-GAMEPLAY .linkflairlabel, .linkflair-GAMEPLAY > div > p > .linkflairlabel { color: #52D017; }
+.linkflair-GAMEPLAY > .linkflairlabel, .linkflair-GAMEPLAY > div.entry > p.title > .linkflairlabel { color: #52D017; }
 div.linkflair-GAMEPLAY { border-left: 2px solid #52D017 !important; }
 
 .side a[href*='MOD'] { 
 	border: 2px solid #A6E4A5;
 	background-color: #A6E4A5;
 }
-.linkflair-MOD .linkflairlabel, .linkflair-MOD > div > p > .linkflairlabel  { color: #A6E4A5; }
+.linkflair-MOD > .linkflairlabel, .linkflair-MOD > div.entry > p.title > .linkflairlabel  { color: #A6E4A5; }
 div.linkflair-MOD {	border-left: 2px solid #A6E4A5 !important; }
 
 .side a[href*='MEDIA'] { 
 	border: 2px solid  #AA0078;
 	background-color: #AA0078;
 }
-.linkflair-MEDIA .linkflairlabel, .linkflair-MEDIA > div > p > .linkflairlabel  { color: #AA0078; }
+.linkflair-MEDIA > .linkflairlabel, .linkflair-MEDIA > div.entry > p.title > .linkflairlabel  { color: #AA0078; }
 div.linkflair-MEDIA { border-left: 2px solid #AA0078 !important; }
 
 .side a[href*='RECRUITMENT'] { 
 	border: 2px solid  #0099CC;
 	background-color: #0099CC;
 }
-.linkflair-RECRUITMENT .linkflairlabel, .linkflair-RECRUITMENT > div > p > .linkflairlabel  { color: #0099CC; }
+.linkflair-RECRUITMENT > .linkflairlabel, .linkflair-RECRUITMENT > div.entry > p.title > .linkflairlabel  { color: #0099CC; }
 div.linkflair-RECRUITMENT {	border-left: 2px solid #0099CC!important; }
 
 .thing .title.loggedin.click, .thing .title.click, .thing .title.loggedin, .thing .title {
@@ -879,7 +879,7 @@ div.linkflair-RECRUITMENT {	border-left: 2px solid #0099CC!important; }
 }
 
 .link .title {
-    font-size: 12.5pt;
+	font-size: 12.5pt;
 }
 
 .combined-search-page .linkflairlabel,
@@ -967,12 +967,44 @@ div.linkflair-RECRUITMENT {	border-left: 2px solid #0099CC!important; }
 
 .res .titlebox .tagline,
 .titlebox .tagline {
-	margin-top: -20px;
+  	margin-top: 0;
+  	position: relative;
+}
+
+.titlebox .tagline a,
+.titlebox .tagline span {
+	padding-top: 10px;
+}
+
+.titlebox .tagline:before {
+	content: "USER FLAIR";
+	color: #292f34;
+	font-weight: 600;
+	margin-top: 20px;
+	font-size: 18px;
+	line-height: 24px;
+	display: block;
+}
+
+.titlebox form.flairtoggle {
+	display: none;
+}
+
+.titlebox .tagline a.author {
+	display: inline-block;
+	margin-left: 50px;
+	font-weight: 700;
+}
+
+.titlebox .tagline a.flairselectbtn {
+	font-size: 15px;
+	margin: 0 2px;
 }
 
 .titlebox .tagline .flair:before {
-	position: relative;
-		top: 10px;
+  	position: absolute;
+		top: 55px;
+		left: 20px;
 }
 
 .commentarea .flair:before {
@@ -1116,49 +1148,49 @@ div.linkflair-RECRUITMENT {	border-left: 2px solid #0099CC!important; }
 }
 
 .search-page .side {
-    margin-top: 504px;
+	margin-top: 504px;
 }
 
 .search-page .side .titlebox .md>ul:first-of-type {
-    display: none;
+	display: none;
 }
 
 .search-page #header-img-a {
-    top: 0;
+	top: 0;
 }
 
 .search-page .side .md>p:nth-child(2)>a[href*="discord.gg"], .search-page #header-bottom-left {
-    top: 166px;
+	top: 166px;
 }
 
 .combined-search-page .search-result {
-    padding: 16px 25px;
-    margin: 0 -16px;
-    position: relative;
-    border-bottom: 1px solid #efefef;
+	padding: 16px 25px;
+	margin: 0 -16px;
+	position: relative;
+	border-bottom: 1px solid #efefef;
 }
 
 .combined-search-page .search-result .search-result-header .search-title {
-    margin: 0;
-    font-size: 13.5pt;
-    font-family: Arial,sans-serif;
-    transition: all .15s ease;
-    overflow: visible;
-    color: #333;
+	margin: 0;
+	font-size: 13.5pt;
+	font-family: Arial,sans-serif;
+	transition: all .15s ease;
+	overflow: visible;
+	color: #333;
 }
 
 .search-result.has-thumbnail {
-    display: block;
+	display: block;
 }
 
 .search-result .flair:before {
-    height: 15px;
-    position: relative;
-        top: 3px;
+	height: 15px;
+	position: relative;
+		top: 3px;
 }
 
 .search-page #search input[type=text] {
-    margin-top: 16px;
+	margin-top: 16px;
 }
  
 .submit-page #header-bottom-left {
@@ -1243,7 +1275,7 @@ div.linkflair-RECRUITMENT {	border-left: 2px solid #0099CC!important; }
 }
 
 .res-nightmode body {
-    background: #000 url(%%night-bg-home%%);
+	background: #000 url(%%night-bg-home%%);
 }
 
 .res-nightmode .stylesheet-customize-container .pretty-form,
@@ -1251,8 +1283,8 @@ div.linkflair-RECRUITMENT {	border-left: 2px solid #0099CC!important; }
 .res-nightmode #images,
 .res-nightmode .commentarea>.usertext,
 .res-nightmode .comments-page .side .linkinfo{
-    background-color: #373737 !important;
-    border-bottom: 1px solid #212121;
+	background-color: #373737 !important;
+	border-bottom: 1px solid #212121;
 }
 
 .res-nightmode .side .titlebox h1.redditname:before,
@@ -1261,14 +1293,14 @@ div.linkflair-RECRUITMENT {	border-left: 2px solid #0099CC!important; }
 .res-nightmode #search input[type="text"],
 .res-nightmode #sr-header-area,
 .res-nightmode #newlink-with-image-upload .image-upload-drop-target {
-    background-color: rgb(38, 38, 38);
+	background-color: rgb(38, 38, 38);
 }
 
 .res-nightmode .tabmenu li a,
 .res-nightmode .tabmenu li a, .res-nightmode .tabmenu li.selected a,
 .res-nightmode .flair,
 .res-nightmode #header-bottom-right {
-    background-color: transparent;
+	background-color: transparent;
 }
 
 .res-nightmode #header-bottom-right .separator, 
@@ -1276,21 +1308,21 @@ div.linkflair-RECRUITMENT {	border-left: 2px solid #0099CC!important; }
 .res-nightmode .morelink a,
 .res-nightmode .link .entry .tagline a,
 .res-nightmode .usertext-edit textarea {
-    color: #eee !important;
+	color: #eee !important;
 }
 
 .res-nightmode .footer-parent:before {
-        box-shadow: 0 0 200px #121212;
+		box-shadow: 0 0 200px #121212;
 }
 
 .res-nightmode .commentarea>.usertext textarea:not(:focus) {
-    background: #999 url(%%commentboxbg%%);
+	background: #999 url(%%commentboxbg%%);
 }
 
 .res-nightmode .commentarea>.usertext textarea {
-    background: #999;
+	background: #999;
 }
 
 .res-nightmode #header:before {
-    background-color: rgba(39,28,60,0.8);
+	background-color: rgba(39,28,60,0.8);
 }
