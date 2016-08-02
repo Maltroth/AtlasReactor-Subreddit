@@ -1151,18 +1151,22 @@ div.linkflair-RECRUITMENT {
   top: 3px;
 }
 
-.res .titlebox .tagline,
-.titlebox .tagline {
+.res .titlebox > .tagline,
+.titlebox > .tagline {
   margin-top: 0;
   position: relative;
 }
 
-.titlebox .tagline a,
-.titlebox .tagline span {
+.titlebox > .tagline > a,
+.titlebox > .tagline > span {
     padding-top: 10px;
 }
 
-.titlebox .tagline:before {
+.titlebox > .tagline .flairselector .flairoptionpane ul {
+    padding: 0 2.5px;
+}
+
+.titlebox > .tagline:before {
     content: "USER FLAIR";
     color: #292f34;
     font-weight: 600;
@@ -1172,22 +1176,22 @@ div.linkflair-RECRUITMENT {
     display: block;
 }
 
-.titlebox form.flairtoggle {
+.titlebox > form.flairtoggle {
     display: none;
 }
 
-.titlebox .tagline a.author {
+.titlebox > .tagline > a.author {
     display: inline-block;
     margin-left: 50px;
     font-weight: 700;
 }
 
-.titlebox .tagline a.flairselectbtn {
+.titlebox > .tagline > a.flairselectbtn {
     font-size: 15px;
     margin: 0 2px;
 }
 
-.titlebox .tagline .flair:before {
+.titlebox > .tagline > .flair:before {
   position: absolute;
     top: 55px;
     left: 20px;
@@ -1452,7 +1456,7 @@ div.linkflair-RECRUITMENT {
 .flair-trion-worlds {
   background: url(%%sprite-1%%) no-repeat -359px 0 !important;
   border: 0;
-  padding-top: 2px;
+  padding-top: 13px;
   font-size: 0px;
   color: transparent !important;
   width: auto;
@@ -1461,6 +1465,7 @@ div.linkflair-RECRUITMENT {
 .link .flair-trion-worlds {
   position: relative;
   top: 0px !important;
+  padding-top: 2px;
 }
 
 .comment .flair-trion-worlds {
