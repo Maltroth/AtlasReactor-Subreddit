@@ -1086,6 +1086,19 @@ div.linkflair-GAMEPLAY {
   border-left: 2px solid #52D017 !important;
 }
 
+.side a[href*='Giveaway'] {
+  border: 2px solid #e08d8d;
+  background-color: #e08d8d;
+}
+
+.linkflair-GIVEAWAY > .linkflairlabel, .linkflair-GIVEAWAY > div.entry > p.title > .linkflairlabel {
+  color: #e08d8d;
+}
+
+div.linkflair-GIVEAWAY {
+  border-left: 2px solid #e08d8d !important;
+}
+
 .side a[href*='MOD'] {
   border: 2px solid #A6E4A5;
   background-color: #A6E4A5;
@@ -1382,6 +1395,10 @@ div.linkflair-RECRUITMENT {
   background: url(%%sprite-flairs%%) no-repeat -414px -73px;
 }
 
+.flair-fill:before {
+  background: url(%%sprite-flairs%%) no-repeat -459px -8px;
+}
+
 .flairselector .flairoptionpane .flair-asana:before {
   background: url(%%sprite-flairs%%) no-repeat -284px -168px;
 }
@@ -1476,6 +1493,10 @@ div.linkflair-RECRUITMENT {
 
 .flairoptionpane  .flair-phaedra:before {
   background: url(%%sprite-flairs%%) no-repeat -431px -715px;
+}
+
+.flairoptionpane  .flair-fill:before {
+  background: url(%%sprite-flairs%%) no-repeat -588px -167px;
 }
 
 a[href*="/#flair"] {
@@ -1636,21 +1657,27 @@ a[href*="/#flair-juno"],
 }
 
 a[href*="/#flair-su-ren"],
-.sidecontentbox .flair--su-ren:before,
-.link .flair--su-ren:before {
+.sidecontentbox .flair-su-ren:before,
+.link .flair-su-ren:before {
   background: url(%%sprite-flairs%%) no-repeat -417px -7px;
 }
 
 a[href*="/#flair-kaigin"],
-.sidecontentbox .flair--kaigen:before,
-.link .flair--kaigen:before {
+.sidecontentbox .flair-kaigen:before,
+.link .flair-kaigen:before {
   background: url(%%sprite-flairs%%) no-repeat -416px -40px;
 }
 
 a[href*="/#flair-phaedra"],
-.sidecontentbox .flair--phaedra:before,
-.link .flair--phaedra:before {
+.sidecontentbox .flair-phaedra:before,
+.link .flair-phaedra:before {
   background: url(%%sprite-flairs%%) no-repeat -414px -73px;
+}
+
+.sidecontentbox .flair-fill:before,
+.link .flair-fill:before,
+.flair-fill:before {
+  background: url(%%sprite-flairs%%) no-repeat -459px -8px;
 }
 
 .flair-trion-worlds {
