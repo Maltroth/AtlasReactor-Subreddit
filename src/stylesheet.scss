@@ -289,6 +289,16 @@ div.titlebox span.number:after {
   margin-top: 20px;
 }
 
+.side .md a[href*="https://discordapp.com/invite/atlasreactor#partnered"] {
+	display: block;
+	width: 100%;
+	height: 192px;
+	background-image: url(%%discord-partner%%);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	margin: 20px 0;
+}
+
 .side .md > p:nth-child(2) > a[href*="discord.gg"],
 .side .md > p:nth-child(2) > a[href*="https://discordapp.com/invite/atlasreactor"] {
   background: url(%%sprite-1%%) no-repeat -245px 0 !important;
