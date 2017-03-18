@@ -138,259 +138,354 @@
 a[href*="/#flair"] {
 	display: inline-block;
 	color: transparent;
-	width: 47px;
+	width: 45px;
 	height: 18px;
 }
 
 a[href*="/#flair-dummy-big"],
 .sidecontentbox .flair-dummy-big:before,
-.link .flair-dummy-big:before,
-.flair-dummy-big:before {
+.link .flair-dummy-big:before {
   background: url(%%sprite-flairs%%) no-repeat -183px -11px;
 }
 
 a[href*="/#flair-dummy-fast"],
 .sidecontentbox .flair-dummy-fast:before,
-.link .flair-dummy-fast:before,
-.flair-dummy-fast:before {
+.link .flair-dummy-fast:before {
   background: url(%%sprite-flairs%%) no-repeat -222px -11px;
 }
 
 a[href*="/#flair-dummy-small"],
 .sidecontentbox .flair-dummy-small:before,
-.link .flair-dummy-small:before,
-.flair-dummy-small:before {
+.link .flair-dummy-small:before {
   background: url(%%sprite-flairs%%) no-repeat -261px -11px;
 }
 
 a[href*="/#flair-asana"],
 .sidecontentbox .flair-asana:before,
-.link .flair-asana:before,
-.flair-asana:before {
+.link .flair-asana:before {
   background: url(%%sprite-flairs%%) no-repeat -104px -10px;
 }
 
+.flair-asana:before { 
+  background: url(%%sprite-flairs%%) no-repeat -99px -5px; 
+} 
+
 a[href*="/#flair-aurora"],
 .sidecontentbox .flair-aurora:before,
-.link .flair-aurora:before,
-.flair-aurora:before {
+.link .flair-aurora:before {
   background: url(%%sprite-flairs%%) no-repeat -141px -10px;
 }
 
+.flair-aurora:before { 
+  background: url(%%sprite-flairs%%) no-repeat -141px -5px; 
+} 
+
 a[href*="/#flair-elle"],
 .sidecontentbox .flair-elle:before,
-.link .flair-elle:before,
-.flair-elle:before {
+.link .flair-elle:before {
   background: url(%%sprite-flairs%%) no-repeat -295px -11px;
 }
 
+.flair-elle:before { 
+  background: url(%%sprite-flairs%%) no-repeat -295px -6px; 
+} 
+
 a[href*="/#flair-garrison"],
 .sidecontentbox .flair-garrison:before,
-.link .flair-garrison:before,
-.flair-garrison:before {
+.link .flair-garrison:before {
   background: url(%%sprite-flairs%%) no-repeat -339px -10px;
 }
 
+.flair-garrison:before { 
+  background: url(%%sprite-flairs%%) no-repeat -337px -5px; 
+} 
+
 a[href*="/#flair-gremolitions"],
 .sidecontentbox .flair-gremolitions:before,
-.link .flair-gremolitions:before,
-.flair-gremolitions:before {
+.link .flair-gremolitions:before {
   background: url(%%sprite-flairs%%) no-repeat -379px -11px;
 }
 
+.flair-gremolitions:before { 
+  background: url(%%sprite-flairs%%) no-repeat -376px -6px; 
+} 
+
 a[href*="/#flair-grey"],
 .sidecontentbox .flair-grey:before,
-.link .flair-grey:before,
-.flair-grey:before {
+.link .flair-grey:before {
   background: url(%%sprite-flairs%%) no-repeat -100px -44px;
 }
 
+.flair-grey:before { 
+  background: url(%%sprite-flairs%%) no-repeat -100px -39px; 
+} 
+
 a[href*="/#flair-helio"],
 .sidecontentbox .flair-helio:before,
-.link .flair-helio:before,
-.flair-helio:before {
+.link .flair-helio:before {
   background: url(%%sprite-flairs%%) no-repeat -140px -44px;
 }
 
+.flair-helio:before { 
+  background: url(%%sprite-flairs%%) no-repeat -140px -39px; 
+} 
+
 a[href*="/#flair-lockwood"],
 .sidecontentbox .flair-lockwood:before,
-.link .flair-lockwood:before,
-.flair-lockwood:before {
+.link .flair-lockwood:before {
   background: url(%%sprite-flairs%%) no-repeat -180px -46px;
 }
 
+.flair-lockwood:before { 
+  background: url(%%sprite-flairs%%) no-repeat -178px -41px; 
+} 
+
 a[href*="/#flair-nix"],
 .sidecontentbox .flair-nix:before,
-.link .flair-nix:before,
-.flair-nix:before {
+.link .flair-nix:before {
   background: url(%%sprite-flairs%%) no-repeat -218px -45px;
 }
 
+.flair-nix:before { 
+  background: url(%%sprite-flairs%%) no-repeat -218px -40px; 
+} 
+
 a[href*="/#flair-oz"],
 .sidecontentbox .flair-oz:before,
-.link .flair-oz:before,
-.flair-oz:before {
+.link .flair-oz:before {
   background: url(%%sprite-flairs%%) no-repeat -258px -46px;
 }
 
+.flair-oz:before { 
+  background: url(%%sprite-flairs%%) no-repeat -256px -41px; 
+} 
+
 a[href*="/#flair-pup"],
 .sidecontentbox .flair-pup:before,
-.link .flair-pup:before,
-.flair-pup:before {
+.link .flair-pup:before {
   background: url(%%sprite-flairs%%) no-repeat -297px -46px;
 }
 
+.flair-pup:before { 
+  background: url(%%sprite-flairs%%) no-repeat -297px -41px; 
+} 
+
 a[href*="/#flair-quark"],
 .sidecontentbox .flair-quark:before,
-.link .flair-quark:before,
-.flair-quark:before {
+.link .flair-quark:before {
   background: url(%%sprite-flairs%%) no-repeat -337px -44px;
 }
 
+.flair-quark:before { 
+  background: url(%%sprite-flairs%%) no-repeat -335px -39px; 
+} 
+
 a[href*="/#flair-rampart"],
 .sidecontentbox .flair-rampart:before,
-.link .flair-rampart:before,
-.flair-rampart:before {
+.link .flair-rampart:before {
   background: url(%%sprite-flairs%%) no-repeat -374px -45px;
 }
 
+.flair-rampart:before { 
+  background: url(%%sprite-flairs%%) no-repeat -374px -40px; 
+} 
+
 a[href*="/#flair-rask"],
 .sidecontentbox .flair-rask:before,
-.link .flair-rask:before,
-.flair-rask:before {
+.link .flair-rask:before {
   background: url(%%sprite-flairs%%) no-repeat -100px -76px;
 }
 
+.flair-rask:before { 
+  background: url(%%sprite-flairs%%) no-repeat -98px -71px; 
+} 
+
 a[href*="/#flair-titus"],
 .sidecontentbox .flair-titus:before,
-.link .flair-titus:before,
-.flair-titus:before {
+.link .flair-titus:before {
   background: url(%%sprite-flairs%%) no-repeat -137px -77px;
 }
 
+.flair-titus:before { 
+  background: url(%%sprite-flairs%%) no-repeat -138px -72px; 
+} 
+
 a[href*="/#flair-zuki"],
 .sidecontentbox .flair-zuki:before,
-.link .flair-zuki:before,
-.flair-zuki:before {
+.link .flair-zuki:before {
   background: url(%%sprite-flairs%%) no-repeat -177px -76px;
 }
 
+.flair-zuki:before { 
+  background: url(%%sprite-flairs%%) no-repeat -177px -71px; 
+} 
+
 a[href*="/#flair-finn"],
 .sidecontentbox .flair-finn:before,
-.link .flair-finn:before,
-.flair-finn:before {
+.link .flair-finn:before {
   background: url(%%sprite-flairs%%) no-repeat -217px -73px;
 }
 
+.flair-finn:before { 
+  background: url(%%sprite-flairs%%) no-repeat -217px -73px; 
+} 
+
 a[href*="/#flair-celeste"],
 .sidecontentbox .flair-celeste:before,
-.link .flair-celeste:before,
-.flair-celeste:before {
+.link .flair-celeste:before {
   background: url(%%sprite-flairs%%) no-repeat -256px -73px;
 }
 
+.flair-celeste:before { 
+  background: url(%%sprite-flairs%%) no-repeat -256px -73px; 
+} 
+
 a[href*="/#flair-blackburn"],
 .sidecontentbox .flair-blackburn:before,
-.link .flair-blackburn:before,
-.flair-blackburn:before {
+.link .flair-blackburn:before {
   background: url(%%sprite-flairs%%) no-repeat -296px -73px;
 }
 
+.flair-blackburn:before { 
+  background: url(%%sprite-flairs%%) no-repeat -296px -73px; 
+} 
+
 a[href*="/#flair-orion"],
 .sidecontentbox .flair-orion:before,
-.link .flair-orion:before,
-.flair-orion:before {
+.link .flair-orion:before {
   background: url(%%sprite-flairs%%) no-repeat -332px -73px;
 }
 
+.flair-orion:before { 
+  background: url(%%sprite-flairs%%) no-repeat -332px -73px; 
+} 
+
 a[href*="/#flair-bot"],
 .sidecontentbox .flair-bot:before,
-.link .flair-bot:before,
-.flair-bot:before {
+.link .flair-bot:before {
   background: url(%%sprite-flairs%%) no-repeat -181px -7px;
+}
+
+.flair-bot:before { 
+  background: url(%%sprite-flairs%%) no-repeat -181px -7px; 
 }
 
 a[href*="/#flair-juno"],
 .sidecontentbox .flair-juno:before,
-.link .flair-juno:before,
-.flair-juno:before {
+.link .flair-juno:before {
   background: url(%%sprite-flairs%%) no-repeat -374px -76px;
 }
 
+.flair-juno:before { 
+  background: url(%%sprite-flairs%%) no-repeat -374px -74px; 
+} 
+
 a[href*="/#flair-su-ren"],
 .sidecontentbox .flair-su-ren:before,
-.link .flair-su-ren:before,
-.flair-su-ren:before {
+.link .flair-su-ren:before {
   background: url(%%sprite-flairs%%) no-repeat -417px -7px;
 }
 
+.flair-su-ren:before { 
+  background: url(%%sprite-flairs%%) no-repeat -417px -7px; 
+} 
+
 a[href*="/#flair-kaigin"],
 .sidecontentbox .flair-kaigen:before,
-.link .flair-kaigen:before,
-.flair-kaigen:before {
+.link .flair-kaigen:before {
   background: url(%%sprite-flairs%%) no-repeat -416px -40px;
 }
 
+.flair-kaigin:before { 
+  background: url(%%sprite-flairs%%) no-repeat -416px -40px; 
+} 
+
 a[href*="/#flair-phaedra"],
 .sidecontentbox .flair-phaedra:before,
-.link .flair-phaedra:before,
-.flair-phaedra:before {
+.link .flair-phaedra:before {
   background: url(%%sprite-flairs%%) no-repeat -414px -73px;
 }
 
+.flair-phaedra:before { 
+  background: url(%%sprite-flairs%%) no-repeat -414px -73px; 
+} 
+
 a[href*="/#flair-fill"],
 .sidecontentbox .flair-fill:before,
-.link .flair-fill:before,
-.flair-fill:before {
+.link .flair-fill:before {
   background: url(%%sprite-flairs%%) no-repeat -459px -8px;
+}
+
+.flair-fill:before { 
+  background: url(%%sprite-flairs%%) no-repeat -459px -8px; 
 }
 
 a[href*="/#flair-brynn"],
 .sidecontentbox .flair-brynn:before,
-.link .flair-brynn:before,
+.link .flair-brynn:before {
+  background: url(%%sprite-flairs%%) no-repeat -459px -40px;
+}
+
 .flair-brynn:before {
   background: url(%%sprite-flairs%%) no-repeat -459px -40px;
 }
 
 a[href*="/#flair-khita"],
 .sidecontentbox .flair-khita:before,
-.link .flair-khita:before,
+.link .flair-khita:before {
+  background: url(%%sprite-flairs%%) no-repeat -459px -76px;
+}
+
 .flair-khita:before {
   background: url(%%sprite-flairs%%) no-repeat -459px -73px;
 }
 
-.sidecontentbox .flair-fill:before,
-.link .flair-fill:before,
-.flair-fill:before {
-  background: url(%%sprite-flairs%%) no-repeat -459px -73px;
+a[href*="/#flair-evos"],
+.sidecontentbox .flair-evos:before,
+.link .flair-evos:before {
+  background: url(%%sprite-flairs-trusts%%) no-repeat -67px -12px;
 }
 
-.sidecontentbox .flair-evos:before,
-.link .flair-evos:before,
 .flair-evos:before {
   background: url(%%sprite-flairs-trusts%%) no-repeat -67px -4px;
 }
 
+a[href*="/#flair-heliocorps"],
 .sidecontentbox .flair-heliocorps:before,
-.link .flair-heliocorps:before,
+.link .flair-heliocorps:before {
+  background: url(%%sprite-flairs-trusts%%) no-repeat -12px -13px;
+}
+
 .flair-heliocorps:before {
   background: url(%%sprite-flairs-trusts%%) no-repeat -12px -4px;
 }
 
+a[href*="/#flair-heliounited"],
 .sidecontentbox .flair-heliounited:before,
-.link .flair-heliounited:before,
+.link .flair-heliounited:before {
+  background: url(%%sprite-flairs-trusts%%) no-repeat -16px -48px;
+}
+
 .flair-heliounited:before {
   background: url(%%sprite-flairs-trusts%%) no-repeat -16px -43px;
 }
 
+a[href*="/#flair-omni"],
 .sidecontentbox .flair-omni:before,
-.link .flair-omni:before,
+.link .flair-omni:before {
+  background: url(%%sprite-flairs-trusts%%) no-repeat -118px -12px;
+}
+
 .flair-omni:before {
   background: url(%%sprite-flairs-trusts%%) no-repeat -118px -4px;
 }
 
+a[href*="/#flair-warbotics"],
 .sidecontentbox .flair-warbotics:before,
-.link .flair-warbotics:before,
+.link .flair-warbotics:before {
+  background: url(%%sprite-flairs-trusts%%) no-repeat -180px -11px;
+}
+
 .flair-warbotics:before {
   background: url(%%sprite-flairs-trusts%%) no-repeat -180px -5px;
 }
