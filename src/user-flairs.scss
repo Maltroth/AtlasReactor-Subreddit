@@ -1,0 +1,422 @@
+.flairselector ul {
+  overflow: visible;
+}
+
+.flair-kiwi:before {
+	background: url(%%sprite-flairs%%) no-repeat -227px -8px;
+  width: 58px;
+}
+
+.flairselector .flairoptionpane .flair-asana:before {
+  background: url(%%sprite-flairs%%) no-repeat -284px -168px;
+}
+
+.flairselector .flairoptionpane .flair-aurora:before {
+  background: url(%%sprite-flairs%%) no-repeat 0 -385px;
+}
+
+.flairselector .flairoptionpane .flair-elle:before {
+  background: url(%%sprite-flairs%%) no-repeat -430px -168px;
+}
+
+.flairselector .flairoptionpane .flair-garrison:before {
+  background: url(%%sprite-flairs%%) no-repeat 0 -277px;
+}
+
+.flairselector .flairoptionpane .flair-gremolitions:before {
+  background: url(%%sprite-flairs%%) no-repeat -139px -495px;
+}
+
+.flairselector .flairoptionpane .flair-grey:before {
+  background: url(%%sprite-flairs%%) no-repeat -140px -385px;
+}
+
+.flairselector .flairoptionpane .flair-helio:before {
+  background: url(%%sprite-flairs%%) no-repeat 0 -495px;
+}
+
+.flairselector .flairoptionpane .flair-lockwood:before {
+  background: url(%%sprite-flairs%%) no-repeat 0 -168px;
+}
+
+.flairselector .flairoptionpane .flair-nix:before {
+  background: url(%%sprite-flairs%%) no-repeat -285px -385px;
+}
+
+.flairselector .flairoptionpane .flair-oz:before {
+  background: url(%%sprite-flairs%%) no-repeat -285px -605px;
+}
+
+.flairselector .flairoptionpane .flair-pup:before {
+  background: url(%%sprite-flairs%%) no-repeat -141px -168px;
+}
+
+.flairselector .flairoptionpane .flair-quark:before {
+  background: url(%%sprite-flairs%%) no-repeat -285px -495px;
+}
+
+.flairselector .flairoptionpane .flair-rampart:before {
+  background: url(%%sprite-flairs%%) no-repeat -141px -603px;
+}
+
+.flairselector .flairoptionpane .flair-rask:before {
+  background: url(%%sprite-flairs%%) no-repeat -285px -278px;
+}
+
+.flairselector .flairoptionpane .flair-titus:before {
+  background: url(%%sprite-flairs%%) no-repeat 0 -603px;
+}
+
+.flairselector .flairoptionpane .flair-zuki:before {
+  background: url(%%sprite-flairs%%) no-repeat -140px -278px;
+}
+
+.flairselector .flairoptionpane .flair-finn:before {
+  background: url(%%sprite-flairs%%) no-repeat -430px -278px;
+}
+
+.flairselector .flairoptionpane .flair-celeste:before {
+  background: url(%%sprite-flairs%%) no-repeat -430px -385px;
+}
+
+.flairselector .flairoptionpane .flair-blackburn:before {
+  background: url(%%sprite-flairs%%) no-repeat -430px -495px;
+}
+
+.flairselector .flairoptionpane .flair-orion:before {
+  background: url(%%sprite-flairs%%) no-repeat -431px -605px;
+}
+
+.flairselector .flairoptionpane .flair-juno:before {
+  background: url(%%sprite-flairs%%) no-repeat -0 -715px;
+}
+
+.flairselector .flairoptionpane  .flair-su-ren:before {
+  background: url(%%sprite-flairs%%) no-repeat -135px -714px;
+}
+
+.flairselector .flairoptionpane  .flair-kaigin:before {
+  background: url(%%sprite-flairs%%) no-repeat -283px -715px;
+}
+
+.flairoptionpane  .flair-phaedra:before {
+  background: url(%%sprite-flairs%%) no-repeat -431px -715px;
+}
+
+.flairoptionpane  .flair-fill:before {
+  background: url(%%sprite-flairs%%) no-repeat -588px -167px;
+}
+
+.flairoptionpane  .flair-brynn:before {
+  background: url(%%sprite-flairs%%) no-repeat -577px -276px;
+}
+
+.flairoptionpane  .flair-khita:before {
+  background: url(%%sprite-flairs%%) no-repeat -577px -385px;
+}
+
+.flairoptionpane  .flair-evos:before {
+  background: url(%%sprite-flairs-trusts%%) no-repeat -196px -167px;
+}
+
+.flairoptionpane  .flair-heliocorps:before {
+  background: url(%%sprite-flairs-trusts%%) no-repeat -14px -167px;
+}
+
+.flairoptionpane  .flair-heliounited:before {
+  background: url(%%sprite-flairs-trusts%%) no-repeat -25px -293px;
+}
+
+.flairoptionpane  .flair-omni:before {
+  background: url(%%sprite-flairs-trusts%%) no-repeat -379px -166px;
+}
+
+.flairoptionpane  .flair-warbotics:before {
+  background: url(%%sprite-flairs-trusts%%) no-repeat -587px -167px;
+}
+
+a[href*="/#flair"] {
+	display: inline-block;
+	color: transparent;
+	width: 47px;
+	height: 18px;
+}
+
+a[href*="/#flair-dummy-big"],
+.sidecontentbox .flair-dummy-big:before,
+.link .flair-dummy-big:before,
+.flair-dummy-big:before {
+  background: url(%%sprite-flairs%%) no-repeat -183px -11px;
+}
+
+a[href*="/#flair-dummy-fast"],
+.sidecontentbox .flair-dummy-fast:before,
+.link .flair-dummy-fast:before,
+.flair-dummy-fast:before {
+  background: url(%%sprite-flairs%%) no-repeat -222px -11px;
+}
+
+a[href*="/#flair-dummy-small"],
+.sidecontentbox .flair-dummy-small:before,
+.link .flair-dummy-small:before,
+.flair-dummy-small:before {
+  background: url(%%sprite-flairs%%) no-repeat -261px -11px;
+}
+
+a[href*="/#flair-asana"],
+.sidecontentbox .flair-asana:before,
+.link .flair-asana:before,
+.flair-asana:before {
+  background: url(%%sprite-flairs%%) no-repeat -104px -10px;
+}
+
+a[href*="/#flair-aurora"],
+.sidecontentbox .flair-aurora:before,
+.link .flair-aurora:before,
+.flair-aurora:before {
+  background: url(%%sprite-flairs%%) no-repeat -141px -10px;
+}
+
+a[href*="/#flair-elle"],
+.sidecontentbox .flair-elle:before,
+.link .flair-elle:before,
+.flair-elle:before {
+  background: url(%%sprite-flairs%%) no-repeat -295px -11px;
+}
+
+a[href*="/#flair-garrison"],
+.sidecontentbox .flair-garrison:before,
+.link .flair-garrison:before,
+.flair-garrison:before {
+  background: url(%%sprite-flairs%%) no-repeat -339px -10px;
+}
+
+a[href*="/#flair-gremolitions"],
+.sidecontentbox .flair-gremolitions:before,
+.link .flair-gremolitions:before,
+.flair-gremolitions:before {
+  background: url(%%sprite-flairs%%) no-repeat -379px -11px;
+}
+
+a[href*="/#flair-grey"],
+.sidecontentbox .flair-grey:before,
+.link .flair-grey:before,
+.flair-grey:before {
+  background: url(%%sprite-flairs%%) no-repeat -100px -44px;
+}
+
+a[href*="/#flair-helio"],
+.sidecontentbox .flair-helio:before,
+.link .flair-helio:before,
+.flair-helio:before {
+  background: url(%%sprite-flairs%%) no-repeat -140px -44px;
+}
+
+a[href*="/#flair-lockwood"],
+.sidecontentbox .flair-lockwood:before,
+.link .flair-lockwood:before,
+.flair-lockwood:before {
+  background: url(%%sprite-flairs%%) no-repeat -180px -46px;
+}
+
+a[href*="/#flair-nix"],
+.sidecontentbox .flair-nix:before,
+.link .flair-nix:before,
+.flair-nix:before {
+  background: url(%%sprite-flairs%%) no-repeat -218px -45px;
+}
+
+a[href*="/#flair-oz"],
+.sidecontentbox .flair-oz:before,
+.link .flair-oz:before,
+.flair-oz:before {
+  background: url(%%sprite-flairs%%) no-repeat -258px -46px;
+}
+
+a[href*="/#flair-pup"],
+.sidecontentbox .flair-pup:before,
+.link .flair-pup:before,
+.flair-pup:before {
+  background: url(%%sprite-flairs%%) no-repeat -297px -46px;
+}
+
+a[href*="/#flair-quark"],
+.sidecontentbox .flair-quark:before,
+.link .flair-quark:before,
+.flair-quark:before {
+  background: url(%%sprite-flairs%%) no-repeat -337px -44px;
+}
+
+a[href*="/#flair-rampart"],
+.sidecontentbox .flair-rampart:before,
+.link .flair-rampart:before,
+.flair-rampart:before {
+  background: url(%%sprite-flairs%%) no-repeat -374px -45px;
+}
+
+a[href*="/#flair-rask"],
+.sidecontentbox .flair-rask:before,
+.link .flair-rask:before,
+.flair-rask:before {
+  background: url(%%sprite-flairs%%) no-repeat -100px -76px;
+}
+
+a[href*="/#flair-titus"],
+.sidecontentbox .flair-titus:before,
+.link .flair-titus:before,
+.flair-titus:before {
+  background: url(%%sprite-flairs%%) no-repeat -137px -77px;
+}
+
+a[href*="/#flair-zuki"],
+.sidecontentbox .flair-zuki:before,
+.link .flair-zuki:before,
+.flair-zuki:before {
+  background: url(%%sprite-flairs%%) no-repeat -177px -76px;
+}
+
+a[href*="/#flair-finn"],
+.sidecontentbox .flair-finn:before,
+.link .flair-finn:before,
+.flair-finn:before {
+  background: url(%%sprite-flairs%%) no-repeat -217px -73px;
+}
+
+a[href*="/#flair-celeste"],
+.sidecontentbox .flair-celeste:before,
+.link .flair-celeste:before,
+.flair-celeste:before {
+  background: url(%%sprite-flairs%%) no-repeat -256px -73px;
+}
+
+a[href*="/#flair-blackburn"],
+.sidecontentbox .flair-blackburn:before,
+.link .flair-blackburn:before,
+.flair-blackburn:before {
+  background: url(%%sprite-flairs%%) no-repeat -296px -73px;
+}
+
+a[href*="/#flair-orion"],
+.sidecontentbox .flair-orion:before,
+.link .flair-orion:before,
+.flair-orion:before {
+  background: url(%%sprite-flairs%%) no-repeat -332px -73px;
+}
+
+a[href*="/#flair-bot"],
+.sidecontentbox .flair-bot:before,
+.link .flair-bot:before,
+.flair-bot:before {
+  background: url(%%sprite-flairs%%) no-repeat -181px -7px;
+}
+
+a[href*="/#flair-juno"],
+.sidecontentbox .flair-juno:before,
+.link .flair-juno:before,
+.flair-juno:before {
+  background: url(%%sprite-flairs%%) no-repeat -374px -76px;
+}
+
+a[href*="/#flair-su-ren"],
+.sidecontentbox .flair-su-ren:before,
+.link .flair-su-ren:before,
+.flair-su-ren:before {
+  background: url(%%sprite-flairs%%) no-repeat -417px -7px;
+}
+
+a[href*="/#flair-kaigin"],
+.sidecontentbox .flair-kaigen:before,
+.link .flair-kaigen:before,
+.flair-kaigen:before {
+  background: url(%%sprite-flairs%%) no-repeat -416px -40px;
+}
+
+a[href*="/#flair-phaedra"],
+.sidecontentbox .flair-phaedra:before,
+.link .flair-phaedra:before,
+.flair-phaedra:before {
+  background: url(%%sprite-flairs%%) no-repeat -414px -73px;
+}
+
+a[href*="/#flair-fill"],
+.sidecontentbox .flair-fill:before,
+.link .flair-fill:before,
+.flair-fill:before {
+  background: url(%%sprite-flairs%%) no-repeat -459px -8px;
+}
+
+a[href*="/#flair-brynn"],
+.sidecontentbox .flair-brynn:before,
+.link .flair-brynn:before,
+.flair-brynn:before {
+  background: url(%%sprite-flairs%%) no-repeat -459px -40px;
+}
+
+a[href*="/#flair-khita"],
+.sidecontentbox .flair-khita:before,
+.link .flair-khita:before,
+.flair-khita:before {
+  background: url(%%sprite-flairs%%) no-repeat -414px -73px;
+}
+
+.sidecontentbox .flair-fill:before,
+.link .flair-fill:before,
+.flair-fill:before {
+  background: url(%%sprite-flairs%%) no-repeat -459px -73px;
+}
+
+.sidecontentbox .flair-evos:before,
+.link .flair-evos:before,
+.flair-evos:before {
+  background: url(%%sprite-flairs-trusts%%) no-repeat -67px -4px;
+}
+
+.sidecontentbox .flair-heliocorps:before,
+.link .flair-heliocorps:before,
+.flair-heliocorps:before {
+  background: url(%%sprite-flairs-trusts%%) no-repeat -12px -4px;
+}
+
+.sidecontentbox .flair-heliounited:before,
+.link .flair-heliounited:before,
+.flair-heliounited:before {
+  background: url(%%sprite-flairs-trusts%%) no-repeat -16px -43px;
+}
+
+.sidecontentbox .flair-omni:before,
+.link .flair-omni:before,
+.flair-omni:before {
+  background: url(%%sprite-flairs-trusts%%) no-repeat -118px -4px;
+}
+
+.sidecontentbox .flair-warbotics:before,
+.link .flair-warbotics:before,
+.flair-warbotics:before {
+  background: url(%%sprite-flairs-trusts%%) no-repeat -180px -5px;
+}
+
+.flair-trion-worlds {
+  background: url(%%sprite-1%%) no-repeat -359px 0 !important;
+  border: 0;
+  padding-top: 13px;
+  font-size: 0px;
+  color: transparent !important;
+  width: auto;
+}
+
+.link .flair-trion-worlds {
+  position: relative;
+  top: 0px !important;
+  padding-top: 2px;
+}
+
+.comment .flair-trion-worlds {
+  width: 62px !important;
+  height: 20px !important;
+  left: -15px !important;
+}
+
+.flair-trion-worlds:before,
+.flair-trion-worlds:after {
+  display: none;
+}
