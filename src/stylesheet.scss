@@ -1304,3 +1304,8 @@ a[href$="#spoiler"]:hover {
 .thumbnail.spoiler {
 	background-position:6px -1211px
 }
+
+.comment .score::before {
+  display: none;
+  content: "";
+}
