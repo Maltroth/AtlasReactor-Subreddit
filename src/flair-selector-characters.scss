@@ -1,0 +1,45 @@
+.flairselector {
+  left: 15% !important;
+  margin-left: 0;
+  width: 1088px !important;
+  background-image: url(%%bg-character-selector%%);
+  background-size: cover;
+  background-position: center;
+}
+
+.flairselector .flairoptionpane {
+  max-height: 360px;
+}
+
+.titlebox > .tagline .flairselector .flairoptionpane ul {
+  width: 100% !important;
+  max-width: none;
+  padding: 0 20px;
+  text-align: center;
+  float: none;
+}
+
+.titlebox > .tagline .flairselector .flairoptionpane ul li {
+  width: auto !important;
+  display: inline-block !important;
+  margin: 0 -15px;
+}
+
+.titlebox > .tagline .flairselector .flairoptionpane ul li:hover {
+  background-color: transparent;
+} 
+
+.titlebox > .tagline .flairselector .flairoptionpane ul li .flair {
+  font-size: 0 !important;
+}
+
+.titlebox > .tagline .flairselector .flairoptionpane ul li .flair:before {
+  width: 134px;
+  height: 100px;
+  opacity: .8;
+  transition: opacity ease .2s;
+}
+
+.titlebox > .tagline .flairselector .flairoptionpane ul li .flair:hover:before {
+  opacity: 1;
+}

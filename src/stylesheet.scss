@@ -8,6 +8,9 @@
 @import 'user-flairs';
 @import 'link-flairs';
 
+@import 'flair-selector-characters';
+@import 'flair-selector-links';
+
 body {
   max-width: 100%;
   font-family: "Open Sans", Tahoma, Arial;
@@ -764,41 +767,6 @@ div.titlebox span.number:after {
   margin-bottom: 5px;
 }
 
-.flairselector {
-  left: 15% !important;
-  margin-left: 0;
-  width: 1088px !important;
-  background-image: url(%%bg-character-selector%%);
-  background-size: cover;
-  background-position: center;
-}
-
-.flairoptionpane {
-  max-height: 350px;
-}
-
-.flairselector .flairoptionpane ul {
-  width: 100% !important;
-  max-width: none;
-  padding: 0 20px;
-  text-align: center;
-  float: none;
-}
-
-.flairselector .flairoptionpane .flair {
-  font-size: 0 !important;
-}
-
-.flairselector .flairoptionpane ul li {
-  width: auto !important;
-  display: inline-block !important;
-  margin: 0 -15px;
-}
-
-.flairselector .flairoptionpane ul li:hover {
-  background-color: transparent;
-} 
-
 /** Posts Styles **/
 .arrow {
   position: relative;
@@ -977,15 +945,12 @@ div.RES-keyNav-activeElement, div.commentarea div.RES-keyNav-activeElement.entry
   display: inline-block;
 }
 
-.flairselector .flairoptionpane .flair:before {
-  width: 134px;
-  height: 100px;
-  opacity: .8;
-  transition: opacity ease .2s;
+.flairselector h2 {
+  color: #000066;
 }
 
-.flairselector .flairoptionpane .flair:hover:before {
-  opacity: 1;
+.flairoptionpane ul li .linkflair span.linkflairlabel {
+  cursor: pointer;
 }
 
 .sidecontentbox .flair:before,
@@ -1009,10 +974,6 @@ div.RES-keyNav-activeElement, div.commentarea div.RES-keyNav-activeElement.entry
 .titlebox > .tagline > a,
 .titlebox > .tagline > span {
 	padding-top: 10px;
-}
-
-.titlebox > .tagline .flairselector .flairoptionpane ul {
-	padding: 0 2.5px;
 }
 
 .titlebox > .tagline:before {

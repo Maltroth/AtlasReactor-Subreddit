@@ -1,0 +1,17 @@
+#siteTable .flairselector {
+  left: 38% !important;
+  margin-left: 0;
+  width: 385px !important;
+  background-image: url(%%bg-character-selector%%);
+  background-size: cover;
+  background-position: center;
+}
+
+#siteTable .flairselector .flairoptionpane {
+  max-height: 350px;
+}
+
+#siteTable .flairselector .flairoptionpane ul li {
+  transition: all ease .2s;
+  cursor: pointer;
+}
