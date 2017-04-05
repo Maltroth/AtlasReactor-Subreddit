@@ -115,6 +115,10 @@
   background: url(%%sprite-flairs%%) no-repeat -577px -385px;
 }
 
+.flairoptionpane .flair-tol-ren:before {
+  background: url(%%sprite-flairs%%) no-repeat -577px -496px;
+}
+
 .flairoptionpane  .flair-evos:before {
   background: url(%%sprite-flairs-trusts%%) no-repeat -196px -167px;
 }
@@ -438,6 +442,16 @@ a[href*="/#flair-khita"],
 
 .flair-khita:before {
   background: url(%%sprite-flairs%%) no-repeat -459px -73px;
+}
+
+a[href*="/#flair-tol-ren"],
+.sidecontentbox .flair-tol-ren:before,
+.link .flair-tol-ren:before {
+  background: url(%%sprite-flairs%%) no-repeat -504px -8px;
+}
+
+.flair-tol-ren:before {
+  background: url(%%sprite-flairs%%) no-repeat -504px -8px;
 }
 
 a[href*="/#flair-evos"],
