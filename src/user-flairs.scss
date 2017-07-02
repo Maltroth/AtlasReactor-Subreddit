@@ -119,6 +119,10 @@
   background: url(%%sprite-flairs%%) no-repeat -577px -496px;
 }
 
+.flairoptionpane .flair-meridian:before {
+  background: url(%%sprite-flairs%%) no-repeat -571px -608px;
+}
+
 .flairoptionpane  .flair-evos:before {
   background: url(%%sprite-flairs-trusts%%) no-repeat -196px -167px;
 }
@@ -453,6 +457,17 @@ a[href*="/#flair-tol-ren"],
 .flair-tol-ren:before {
   background: url(%%sprite-flairs%%) no-repeat -504px -8px;
 }
+
+a[href*="/#flair-meridian"],
+.sidecontentbox .flair-meridian:before,
+.link .flair-meridian:before {
+  background: url(%%sprite-flairs%%) no-repeat -502px -40px;
+}
+
+.flair-meridian:before {
+  background: url(%%sprite-flairs%%) no-repeat -502px -40px;
+}
+
 
 a[href*="/#flair-evos"],
 .sidecontentbox .flair-evos:before,
