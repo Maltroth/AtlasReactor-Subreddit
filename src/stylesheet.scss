@@ -27,6 +27,8 @@ button, button:hover {
 
 .titlebox:before {
   font-family: "Open Sans", Tahoma, Arial;
+  content: "";
+  display: none;
 }
 
 body > .content {
@@ -224,11 +226,11 @@ div.titlebox span.number:after {
 }
 
 .res .titlebox .tagline, .titlebox .tagline,
-.subButtons, .titlebox .users-online,
-.titlebox form.toggle, .leavemoderator {
+.subButtons, .titlebox form.toggle, .leavemoderator {
   padding: 5px 20px;
 }
 
+.titlebox .users-online,
 .titlebox .tagline:after {
   display: none;
 }
