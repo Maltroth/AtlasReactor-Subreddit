@@ -152,10 +152,14 @@
 }
 
 a[href*="/#flair"] {
-	display: inline-block;
+	display: inline-flex;
 	color: transparent;
-	width: 45px;
+	width: 35px;
 	height: 18px;
+}
+
+a[href*="/#flair"] + span.keyNavAnnotation {
+  display: none;
 }
 
 a[href*="/#flair-dummy-big"],
