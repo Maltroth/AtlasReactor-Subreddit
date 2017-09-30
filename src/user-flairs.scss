@@ -143,6 +143,14 @@
   background: url(%%sprite-flairs-trusts%%) no-repeat -587px -167px;
 }
 
+.flairoptionpane  .flair-nev:before {
+  background: url(%%sprite-flairs%%) no-repeat -571px -715px;
+}
+
+.flairoptionpane  .flair-isadora:before {
+  background: url(%%sprite-flairs%%) no-repeat -605px -40px;
+}
+
 a[href*="/#flair"] {
 	display: inline-flex;
 	color: transparent !important;
@@ -521,6 +529,26 @@ a[href*="/#flair-warbotics"],
 
 .flair-warbotics:before {
   background: url(%%sprite-flairs-trusts%%) no-repeat -180px -5px;
+}
+
+a[href*="/#flair-nev"],
+.sidecontentbox .flair-nev:before,
+.link .flair-nev:before {
+  background: url(%%sprite-flairs%%) no-repeat -502px -79px;
+}
+
+.flair-nev:before {
+  background: url(%%sprite-flairs%%) no-repeat -502px -73px;
+}
+
+a[href*="/#flair-isadora"],
+.sidecontentbox .flair-isadora:before,
+.link .flair-isadora:before {
+  background: url(%%sprite-flairs%%) no-repeat -57px -13px;
+}
+
+.flair-isadora:before {
+  background: url(%%sprite-flairs%%) no-repeat -57px -7px;
 }
 
 .flair-trion-worlds {
