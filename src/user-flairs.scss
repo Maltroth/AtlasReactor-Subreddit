@@ -145,7 +145,7 @@
 
 a[href*="/#flair"] {
 	display: inline-flex;
-	color: transparent;
+	color: transparent !important;
 	width: 35px;
 	height: 18px;
 }
